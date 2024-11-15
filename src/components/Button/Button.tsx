@@ -1,9 +1,9 @@
 import './Button.css'
 
 type ButtonProps = {
+    text: string
     isActive: boolean,
     handleClick: ()=>void
-    text: string
 }
 
 export default function Button({isActive, handleClick, text}:ButtonProps){

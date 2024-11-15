@@ -12,9 +12,16 @@
     justify-content: center;
     width: 100%;
 }
+
 .logo img{
     width: 212px;
     height: 100px;
     margin: 0 10%;
 }
 
+.contact{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-right: 50px;
+}

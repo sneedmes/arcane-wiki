@@ -1,13 +1,15 @@
 import Button from "../Button/Button";
 import logo from "../../images/logo.png";
+import telegram from "../../images/telegram.png";
+import gmail from "../../images/gmail.png";
 import "./Header.css"
 
-type TabSectionProps = {
+type HeaderProps = {
     active: string,
     onClick: (tab: string) => void
 }
 
-export const Header = ({active, onClick}: TabSectionProps) => {
+export const Header = ({active, onClick}: HeaderProps) => {
     return (
         <>
             <header className="header">
@@ -27,9 +29,10 @@ export const Header = ({active, onClick}: TabSectionProps) => {
                     <Button isActive={active === 'territories'}
                             handleClick={() => onClick('territories')}
                             text='Territories'/>
-                    <Button isActive={active === 'contact'}
-                            handleClick={() => onClick('contact')}
-                            text='Contact'/>
+                </div>
+                <div className="contact">
+                    <a href="https://web.telegram.org/k/#@sneedme"><img src={telegram} alt=""/></a>
+                    <a href="mailto:dallaqyan0610@gmail.com"><img src={gmail} alt=""/></a>
                 </div>
             </header>
         </>
