@@ -18,11 +18,15 @@ export const MainSection = ()=>{
                     <a href='http://arcane.com' target='_blank'>Learn more</a>
                 </div>
             </div>
+            <div className="story-title">
+                <h2>ARCANE. THE STORY.</h2>
+            </div>
             <section className="story">
-                <h2 className='story-title'>ARCANE. THE STORY.</h2>
                 <div className="story-tabs">
-                    <Button text='Story' isActive={about === 'story'} handleClick={()=>setAbout('story')}/>
-                    <Button text='Game' isActive={about === 'game'} handleClick={()=>setAbout('game')}/>
+                    <Button text='Story' isActive={about === 'story'} handleClick={() => setAbout('story')}/>
+                    <Button text='Game' isActive={about === 'game'} handleClick={() => setAbout('game')}/>
+                </div>
+                <div className="story-info">
                     {about === 'story' &&
                         <div className='story-description'>
                             {story.map(story => <StorySection key={story.img} {...story}/>)}

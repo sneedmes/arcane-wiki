@@ -5,6 +5,7 @@
     background-size: 100%;
     color: white;
     background-repeat: no-repeat;
+    font-family: "DM Mono", sans-serif;
 }
 
 .intro{
@@ -45,6 +46,20 @@ a{
     border-radius: 5px;
 }
 
-.story-description{
-    color: black;
+.story-title{
+    text-align: center;
+}
+
+.story-tabs{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+    margin-right: 0;
+}
+.story{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    gap: 50px;
 }

@@ -1,6 +1,6 @@
 export const story = [
     {
-        img: './images/story.png',
+        img: '../../../images/story.jpg',
         description: 'Based on the world behind League of Legends,' +
         ' Arcane dives into the delicate balance between the rich, utopian city of Piltover' +
         ' and the seedy, oppressed underground of Zaun.' +
