@@ -1,14 +1,16 @@
 import "./MainSection.css"
-import Button from "../Button/Button";
 import {useState} from "react";
 import {story, game} from "../../data"
 import {StorySection} from "./StorySection/StorySection";
+import storyImage from "../../images/story.png"
+import gameImage from "../../images/game.png"
 
 export const MainSection = ()=>{
     const [about, setAbout] = useState('story')
     return(
-        <section className="main">
-            <div className="intro">
+        <main className="main">
+            {/* Introdution section*/}
+            <section className="intro">
                 <h1 className='intro-title'>ARCANE</h1>
                 <span className='intro-description'>
                     The series has received critical acclaim for its stunning animation, deep
@@ -17,28 +19,46 @@ export const MainSection = ()=>{
                 <div className="intro-button">
                     <a href='http://arcane.com' target='_blank'>Learn more</a>
                 </div>
-            </div>
-            <div className="story-title">
-                <h2>ARCANE. THE STORY.</h2>
-            </div>
+            </section>
+            {/* End of Introdution section*/}
+
+            {/* Story section*/}
             <section className="story">
-                <div className="story-tabs">
-                    <Button text='Story' isActive={about === 'story'} handleClick={() => setAbout('story')}/>
-                    <Button text='Game' isActive={about === 'game'} handleClick={() => setAbout('game')}/>
+                <div className="story-title">
+                    <h2>ARCANE. THE STORY.</h2>
                 </div>
                 <div className="story-info">
+                    <div className="story-tabs">
+                        <button onClick={() => setAbout('story')}
+                                className={about === 'story' ? 'story-active-button' : 'story-button'}>Story
+                        </button>
+                        <button onClick={() => setAbout('game')}
+                                className={about === 'game' ? 'story-active-button' : 'story-button'}>Game
+                        </button>
+                    </div>
                     {about === 'story' &&
                         <div className='story-description'>
-                            {story.map(story => <StorySection key={story.img} {...story}/>)}
+                            <img src={storyImage} alt=""/>
+                            <div className='story-text'>
+                                <p className='story-quote'>"There are monsters inside all of us."</p>
+                                {story.map(story => <StorySection {...story}/>)}
+                            </div>
                         </div>
                     }
                     {about === 'game' &&
                         <div className='story-description'>
-                            {game.map(game => <StorySection key={game.img} {...game}/>)}
+                            <img src={gameImage} alt=""/>
+                            <div className='story-text'>
+                                <p className='story-quote'>“Those who do not know their limits will never reach their potential.”</p>
+                                {game.map(game => <StorySection {...game}/>)}
+                            </div>
                         </div>
                     }
                 </div>
             </section>
-        </section>
+            {/* End of Story section*/}
+
+
+        </main>
     )
 }
