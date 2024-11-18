@@ -23,18 +23,24 @@ export const game = [
 
 export const actors = [
     {
+        actor: 'actor-1.png',
         name: 'Ella Purnell',
         character: 'Jinx',
-        quote: '...Sheesh, I am not that crazy.'
+        quote: '"“I thought maybe you could love me like you used to."',
+        social: 'https://www.instagram.com/ella_purnell/?hl=ru'
     },
     {
+        actor: 'actor-2.png',
         name: 'Hailee Steinfeld',
         character: 'Vi',
-        quote: 'We’ve all had bad days. But we learn. And we stick together.'
+        quote: '"We’ve all had bad days. But we learn. And we stick together."',
+        social: 'https://www.instagram.com/haileesteinfeld/'
     },
     {
+        actor: 'actor-3.png',
         name: 'Katie Leung',
         character: 'Caitlyn Kiramman',
-        quote: 'Every case, every investigation brings me one step closer to justice.'
+        quote: '"Every case, every investigation brings me one step closer to justice."',
+        social: 'https://www.instagram.com/_katieleung_/'
     }
 ]

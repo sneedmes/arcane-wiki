@@ -135,4 +135,12 @@ a{
     color: #41aaea;
     display: flex;
     gap: 100px;
+    margin-bottom: 50px;
+}
+
+.actors-cards{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
 }

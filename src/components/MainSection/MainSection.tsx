@@ -1,9 +1,10 @@
 import "./MainSection.css"
 import {useState} from "react";
-import {story, game} from "../../data"
+import {story, game, actors} from "../../data"
 import {StorySection} from "./StorySection/StorySection";
 import storyImage from "../../images/story.png"
 import gameImage from "../../images/game.png"
+import {ActorsSection} from "./ActorsSection/ActorsSection";
 
 export const MainSection = ()=>{
     const [about, setAbout] = useState('story')
@@ -70,8 +71,11 @@ export const MainSection = ()=>{
                     <h2>VOICE ACTORS</h2>
                     <h2>VOICE AC</h2>
                 </div>
-
+                <div className="actors-cards">
+                    {actors.map(info=> <ActorsSection {...info}/>)}
+                </div>
             </section>
+            {/* End of Actors section*/}
 
         </main>
     )
