@@ -20,3 +20,21 @@ export const game = [
             " of champions with unique abilities battle to destroy the opposite team's base."
     },
 ]
+
+export const actors = [
+    {
+        name: 'Ella Purnell',
+        character: 'Jinx',
+        quote: '...Sheesh, I am not that crazy.'
+    },
+    {
+        name: 'Hailee Steinfeld',
+        character: 'Vi',
+        quote: 'We’ve all had bad days. But we learn. And we stick together.'
+    },
+    {
+        name: 'Katie Leung',
+        character: 'Caitlyn Kiramman',
+        quote: 'Every case, every investigation brings me one step closer to justice.'
+    }
+]

@@ -25,7 +25,10 @@ export const MainSection = ()=>{
             {/* Story section*/}
             <section className="story">
                 <div className="story-title">
+                    <h2>THE STORY.</h2>
                     <h2>ARCANE. THE STORY.</h2>
+                    <h2>ARCANE. THE STORY.</h2>
+                    <h2>ARCANE. THE ST</h2>
                 </div>
                 <div className="story-info">
                     <div className="story-tabs">
@@ -58,6 +61,17 @@ export const MainSection = ()=>{
             </section>
             {/* End of Story section*/}
 
+            {/* Start of Actors section*/}
+            <section className="actors">
+                <div className="actors-title">
+                    <h2>ACTORS</h2>
+                    <h2>VOICE ACTORS</h2>
+                    <h2>VOICE ACTORS</h2>
+                    <h2>VOICE ACTORS</h2>
+                    <h2>VOICE AC</h2>
+                </div>
+
+            </section>
 
         </main>
     )

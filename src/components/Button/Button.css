@@ -1,16 +1,17 @@
 .button{
-    font-family: "DM Mono", sans-serif;
+    font-family: "Poppins", sans-serif;
     height: 35%;
     cursor: pointer;
     background-color: black;
     color: white;
     border: none;
-    font-size: 20px;
+    font-size: 24px;
+    padding-bottom: 40px;
 }
 
 .active{
-    font-size: 24px;
-    border-bottom: 2px #edd4c8 solid;
+    font-size: 28px;
+    border-bottom: 3px #edd4c8 solid;
     transition: all 0.3s;
 }
 
