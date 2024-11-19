@@ -1,10 +1,13 @@
 import "./MainSection.css"
 import {useState} from "react";
-import {story, game, actors} from "../../data"
+import {story, game, actors, questions} from "../../data"
 import {StorySection} from "./StorySection/StorySection";
+import {ActorsSection} from "./ActorsSection/ActorsSection";
+import {QuestionsSection} from "./QuestionsSection/QuestionsSection"
 import storyImage from "../../images/story.png"
 import gameImage from "../../images/game.png"
-import {ActorsSection} from "./ActorsSection/ActorsSection";
+import questionsImage from "../../images/questions-img.png"
+import netflix from "../../images/netflix.png"
 
 export const MainSection = ()=>{
     const [about, setAbout] = useState('story')
@@ -77,6 +80,41 @@ export const MainSection = ()=>{
             </section>
             {/* End of Actors section*/}
 
+            {/* Start of Questions section*/}
+            <section className="questions">
+                <div className="questions-intro">
+                    <h2>FREQUENTLY</h2>
+                    <h2><span className='questions-title'>ASKED</span> QUESTIONS</h2>
+                    <img src={questionsImage} alt=""/>
+                </div>
+                <div className="questions-answers">
+                    {questions.map(info=> <QuestionsSection {...info}/>)}
+                </div>
+            </section>
+            {/* End of Questions section*/}
+
+            {/* Start of Netflix section*/}
+            <section className="netflix">
+                <div className="netflix-info">
+                    <div>
+                        <h2>START</h2>
+                        <h2><span className="netflix-title">THE ADVENTURE</span></h2>
+                    </div>
+                    <p>Let’s gather together to explore the captivating journey of Piltover and Zaun. Whether you’re a
+                        long-time fan or new to the world of Arcane, this will be an amazing experience!</p>
+                    <div className="netflix-button">
+                        <a href='https://www.netflix.com/title/81435684' target='_blank'>Watch on Netflix</a>
+                    </div>
+                </div>
+                <img src={netflix} alt=""/>
+            </section>
+            {/* End of Netflix section*/}
+
+            {/* Start of Footer section*/}
+                <footer className="footer">
+
+                </footer>
+            {/* End of Footer section*/}
         </main>
     )
 }

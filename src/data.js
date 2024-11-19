@@ -44,3 +44,18 @@ export const actors = [
         social: 'https://www.instagram.com/_katieleung_/'
     }
 ]
+
+export const questions = [
+    {
+        question: 'When Arcane was created?',
+        answer: 'The series was first released in November 2021. A second season was released on November 9th 2024.'
+    },
+    {
+        question: "Where I can find Arcane's soundtrack?",
+        answer: 'Arcane currently has two soundtracks released for the series: Arcane: Original Soundtrack and Arcane: Original Score (divided into 3 Acts). These soundtracks were released on payed music sites such as Amazon Music, Spotify, as well as free on Youtube.'
+    },
+    {
+        question: 'Will there be any similar projects?',
+        answer: 'Arcane is Riot Games’ first foray into the movie and TV space, with the animated series bringing to life the stories of some of League of Legends\' most iconic champions in a stunning visual style from animation studio Fortiche. The series is densely packed with world-building, origin stories, and lore that has drawn in fans worldwide, some who are familiar with Riot’s games and many who are not. Co-creator Christian Linke confirmed earlier in 2024 that Arcane Season 2 would be the last for the series but that the team had many more ideas in development set in the League of Legends world.'
+    }
+]
