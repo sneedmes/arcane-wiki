@@ -110,11 +110,6 @@ export const MainSection = ()=>{
             </section>
             {/* End of Netflix section*/}
 
-            {/* Start of Footer section*/}
-                <footer className="footer">
-
-                </footer>
-            {/* End of Footer section*/}
         </main>
     )
 }

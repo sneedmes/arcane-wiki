@@ -1,0 +1,41 @@
+.footer{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 50px;
+    align-items: center;
+    color: white;
+    background-color: #222222;
+}
+
+.footer-logo p{
+    margin-top: -5px;
+    text-align: center;
+}
+
+.footer-contact{
+    display: flex;
+    gap: 10px;
+}
+
+.footer-nav{
+    display: flex;
+    gap: 50px;
+}
+
+.footer-nav-block{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/*.button{*/
+/*    padding-bottom: 0;*/
+/*    font-size: 16px;*/
+/*    background-color: #222222;*/
+/*}*/
+
+/*.button:hover{*/
+/*    border-bottom: 2px white solid;*/
+/*}*/
