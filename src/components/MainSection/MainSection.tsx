@@ -13,15 +13,18 @@ export const MainSection = ()=>{
     const [about, setAbout] = useState('story')
     return(
         <main className="main">
+
             {/* Introdution section*/}
             <section className="intro">
-                <h1 className='intro-title'>ARCANE</h1>
-                <span className='intro-description'>
+                <div className='intro-container'>
+                    <h1 className='intro-title'>ARCANE</h1>
+                    <span className='intro-description'>
                     The series has received critical acclaim for its stunning animation, deep
                     storytelling, and character development.
-                </span>
-                <div className="intro-button">
-                    <a href='http://arcane.com' target='_blank'>Learn more</a>
+                    </span>
+                    <div className="intro-button">
+                        <a href='http://arcane.com' target='_blank'>Learn more</a>
+                    </div>
                 </div>
             </section>
             {/* End of Introdution section*/}
@@ -29,7 +32,7 @@ export const MainSection = ()=>{
             {/* Story section*/}
             <section className="story">
                 <div className="story-title">
-                    <h2>THE STORY.</h2>
+                    <h2>ANE STORY.</h2>
                     <h2>ARCANE. THE STORY.</h2>
                     <h2>ARCANE. THE STORY.</h2>
                     <h2>ARCANE. THE ST</h2>
@@ -46,7 +49,7 @@ export const MainSection = ()=>{
                     {about === 'story' &&
                         <div className='story-description'>
                             <img src={storyImage} alt=""/>
-                            <div className='story-text'>
+                            <div>
                                 <p className='story-quote'>"There are monsters inside all of us."</p>
                                 {story.map(story => <StorySection {...story}/>)}
                             </div>
@@ -84,7 +87,7 @@ export const MainSection = ()=>{
             <section className="questions">
                 <div className="questions-intro">
                     <h2>FREQUENTLY</h2>
-                    <h2><span className='questions-title'>ASKED</span> QUESTIONS</h2>
+                    <h2><span>ASKED</span> QUESTIONS</h2>
                     <img src={questionsImage} alt=""/>
                 </div>
                 <div className="questions-answers">

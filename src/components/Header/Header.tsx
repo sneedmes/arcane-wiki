@@ -13,24 +13,28 @@ export const Header = ({active, onClick}: HeaderProps) => {
     return (
         <>
             <header className="header">
-                <div className="logo">
+                <div className="header-logo">
                     <img src={logo} alt=""/>
                 </div>
-                <div className="nav">
+                <div className="header-nav">
                     <Button isActive={active === 'characters'}
                             handleClick={() => onClick('characters')}
-                            text='Characters'/>
+                            text='Characters'
+                            position='header'/>
                     <Button isActive={active === 'media'}
                             handleClick={() => onClick('media')}
-                            text='Media'/>
+                            text='Media'
+                            position='header'/>
                     <Button isActive={active === 'main'}
                             handleClick={() => onClick('main')}
-                            text='Main'/>
+                            text='Main'
+                            position='header'/>
                     <Button isActive={active === 'territories'}
                             handleClick={() => onClick('territories')}
-                            text='Territories'/>
+                            text='Territories'
+                            position='header'/>
                 </div>
-                <div className="contact">
+                <div className="header-contact">
                     <a href="https://web.telegram.org/k/#@sneedme"><img src={telegram} alt=""/></a>
                     <a href="mailto:dallaqyan0610@gmail.com"><img src={gmail} alt=""/></a>
                 </div>

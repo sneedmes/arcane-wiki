@@ -1,5 +1,5 @@
 import square from "../../../images/square.png"
-
+import "./QuestionsSection.css"
 type QuestionsProps = {
     question: string,
     answer: string

@@ -7,29 +7,36 @@ type FooterProps = {
     onClick: (tab: string) => void
 }
 
-export const Footer = ({onClick}: FooterProps)=>{
-    return(
+export const Footer = ({onClick}: FooterProps) => {
+    return (
         <footer className='footer'>
             <div className="footer-logo">
-                <h2>ARCANE</h2>
+                <a href='#'>ARCANE</a>
                 <p>League of Legends</p>
             </div>
             <div className="footer-nav">
                 <div className='footer-nav-block'>
                     <Button isActive={false}
-                           handleClick={() => onClick('characters')}
-                           text='Characters'/>
+                            handleClick={() => onClick('characters')}
+                            text='Characters'
+                            position='footer'/>
                     <Button isActive={false}
                             handleClick={() => onClick('media')}
-                            text='Media'/>
+                            text='Media'
+                            position='footer'
+                    />
                 </div>
                 <div className='footer-nav-block'>
                     <Button isActive={false}
-                           handleClick={() => onClick('main')}
-                           text='Main'/>
+                            handleClick={() => onClick('main')}
+                            text='Main'
+                            position='footer'
+                    />
                     <Button isActive={false}
                             handleClick={() => onClick('territories')}
-                            text='Territories'/>
+                            text='Territories'
+                            position='footer'
+                    />
                 </div>
             </div>
             <h3>© 2024 All rights reserved</h3>

@@ -1,0 +1,10 @@
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question-text{
+    color: #f16cc7;
+    font-size: 20px;
+}

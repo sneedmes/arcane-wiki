@@ -5,7 +5,7 @@
     height: 100px;
 }
 
-.nav{
+.header-nav{
     display: flex;
     gap: 53px;
     align-items: center;
@@ -13,13 +13,13 @@
     width: 100%;
 }
 
-.logo img{
+.header-logo img{
     width: 212px;
     height: 100px;
     margin: 0 10%;
 }
 
-.contact{
+.header-contact{
     display: flex;
     gap: 10px;
     align-items: center;
