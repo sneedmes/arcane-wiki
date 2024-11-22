@@ -6,7 +6,7 @@ import {Footer} from "./components/Footer/Footer";
 import {TerritoriesSection} from "./components/TerritoriesSection/TerritoriesSection";
 
 function App() {
-    const [tab, setTab] = useState('main')
+    const [tab, setTab] = useState('territories')
     return (
         <>
             <Header active={tab} onClick={setTab}/>
