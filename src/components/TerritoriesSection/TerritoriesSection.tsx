@@ -1,6 +1,7 @@
 import Button from "../Button/Button";
 import {useState} from "react";
 import {ZaunSection} from "./ZaunSection/ZaunSection";
+import {PiltoverSection} from "./PiltoverSection/PiltoverSection";
 
 export const TerritoriesSection = ()=>{
     const [city, setCity] = useState('zaun')
@@ -16,6 +17,7 @@ export const TerritoriesSection = ()=>{
             </section>
             <section className="about">
                 {city === 'zaun' && <ZaunSection/>}
+                {city === 'piltover' && <PiltoverSection/>}
             </section>
         </>
     )
