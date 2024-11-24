@@ -1,7 +1,7 @@
 import telegram from "../../images/telegram.png";
 import gmail from "../../images/gmail.png";
 import Button from "../Button/Button";
-import "./Footer.css";
+import styles from "./Footer.module.css";
 
 type FooterProps = {
     onClick: (tab: string) => void
@@ -9,13 +9,13 @@ type FooterProps = {
 
 export const Footer = ({onClick}: FooterProps) => {
     return (
-        <footer className='footer'>
-            <div className="footer-logo">
+        <footer className={`${styles.footer}`}>
+            <div className={`${styles.footer_logo}`}>
                 <a href='#'>ARCANE</a>
                 <p>League of Legends</p>
             </div>
-            <div className="footer-nav">
-                <div className='footer-nav-block'>
+            <div className={`${styles.footer_nav}`}>
+                <div className={`${styles.footer_nav_block}`}>
                     <Button isActive={false}
                             handleClick={() => onClick('characters')}
                             text='Characters'
@@ -26,7 +26,7 @@ export const Footer = ({onClick}: FooterProps) => {
                             position='footer'
                     />
                 </div>
-                <div className='footer-nav-block'>
+                <div className={`${styles.footer_nav_block}`}>
                     <Button isActive={false}
                             handleClick={() => onClick('main')}
                             text='Main'
@@ -40,7 +40,7 @@ export const Footer = ({onClick}: FooterProps) => {
                 </div>
             </div>
             <h3>© 2024 All rights reserved</h3>
-            <div className="footer-contact">
+            <div className={`${styles.footer_contact}`}>
                 <a href="https://web.telegram.org/k/#@sneedme"><img src={telegram} alt=""/></a>
                 <a href="mailto:dallaqyan0610@gmail.com"><img src={gmail} alt=""/></a>
             </div>

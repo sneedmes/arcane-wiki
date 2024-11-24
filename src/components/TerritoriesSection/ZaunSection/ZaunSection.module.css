@@ -1,4 +1,4 @@
-.zaun-info{
+.zaun_info{
     display: flex;
     gap: 5px;
     color: #DECEB2;
@@ -7,18 +7,18 @@
     margin-bottom: 100px;
 }
 
-.zaun-info-letter{
+.zaun_info_letter{
     font-size: 36px;
     color: #cfbb8f;
 }
 
-.zaun-info p, .zaun-video  p{
+.zaun_info p, .zaun_video  p{
     width: 700px;
     font-size: 20px;
     text-align: center;
 }
 
-.zaun-gallery{
+.zaun_gallery{
     display: flex;
     gap: 30px;
     padding: 30px;
@@ -27,7 +27,7 @@
     align-items: center;
 }
 
-.zaun-video{
+.zaun_video{
     padding: 30px;
     text-align: center;
     color: #DECEB2;
@@ -39,7 +39,7 @@
     margin-bottom: 50px;
 }
 
-.zaun-video iframe{
+.zaun_video iframe{
     height: 300px;
     width: 30%;
 }

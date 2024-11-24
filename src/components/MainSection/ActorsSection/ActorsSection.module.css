@@ -17,16 +17,16 @@ h4{
     text-align: center;
 }
 
-.actors-name{
+.actors_name{
     color: #f16cc7;
     font-size: 24px;
 }
 
-.actors-character{
+.actors_character{
     color: #f16cc7;
 }
 
-.actors-img{
+.actors_img{
     width: 50%;
     height: 50%;
     border-radius: 5px;

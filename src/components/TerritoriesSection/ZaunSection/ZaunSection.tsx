@@ -3,15 +3,15 @@ import ekko from "../../../images/zaun-ekko.png"
 import leftImage from "../../../images/zaun-gallery-small1.png"
 import middleImage from "../../../images/zaun-gallery-large.png"
 import rightImage from "../../../images/zaun-gallery-small2.png"
-import "./ZaunSection.css"
+import styles from "./ZaunSection.module.css"
 
 export const ZaunSection = ()=>{
     return(
         <>
             {/*Start Zaun info section*/}
-            <section className="zaun-info">
+            <section className={`${styles.zaun_info}`}>
                 <img src={monster} alt=""/>
-                <p><span className='zaun-info-letter'>Z</span>aun is a large, undercity district, lying in the deep canyons and valleys threading Piltover.
+                <p><span className={`${styles.zaun_info_letter}`}>Z</span>aun is a large, undercity district, lying in the deep canyons and valleys threading Piltover.
                     What light reaches below is filtered through fumes leaking from the tangles of corroded pipework
                     and reflected from the stained glass of its industrial architecture. Zaun and Piltover were once united,
                     but are now separate, yet symbiotic societies. Though it exists in perpetual smogged twilight, Zaun thrives,
@@ -27,15 +27,15 @@ export const ZaunSection = ()=>{
             {/*End Zaun info section*/}
 
             {/*Start Zaun gallery section*/}
-            <section className="zaun-gallery">
-                <img src={leftImage} alt="" className="zaun-gallery-small"/>
-                <img src={middleImage} alt="" className="zaun-gallery-large"/>
-                <img src={rightImage} alt="" className="zaun-gallery-small"/>
+            <section className={`${styles.zaun_gallery}`}>
+                <img src={leftImage} alt="" className={`${styles.zaun_gallery_small}`}/>
+                <img src={middleImage} alt="" className={`${styles.zaun_gallery_large}`}/>
+                <img src={rightImage} alt="" className={`${styles.zaun_gallery_small}`}/>
             </section>
             {/*End Zaun gallery section*/}
 
             {/*Start Zaun video section*/}
-            <section className="zaun-video">
+            <section className={`${styles.zaun_video}`}>
                 <h2>Tales of Runeterra: Piltover and Zaun</h2>
                 <p>When Heimerdinger’s latest hextech creation is stolen by Jinx, the professor sends an unfortunate apprentice on a wild goose chase through the City of Progress… and beneath it.</p>
                 <iframe

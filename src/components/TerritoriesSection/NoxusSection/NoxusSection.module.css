@@ -1,0 +1,50 @@
+.noxus_info{
+    display: flex;
+    gap: 5px;
+    color: #DECEB2;
+    padding: 15px;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.noxus_info img{
+    height: 350px;
+}
+
+.noxus_info_letter{
+    font-size: 36px;
+    color: #cfbb8f;
+}
+
+.noxus_info p, .noxus_video  p{
+    width: 700px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.noxus_gallery{
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.noxus_video{
+    padding: 30px;
+    text-align: center;
+    color: #DECEB2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.noxus_video iframe{
+    height: 300px;
+    width: 30%;
+}

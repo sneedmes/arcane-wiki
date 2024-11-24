@@ -29,7 +29,7 @@ a{
     height: 536px;
 }
 
-.intro-container{
+.intro_container{
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -37,20 +37,20 @@ a{
     padding: 130px 50px 0 50px;
 }
 
-.intro-title{
+.intro_title{
     margin: 0;
     font-size: 60px;
     font-weight: bold;
     color: #41aaea;
 }
 
-.intro-description{
+.intro_description{
     width: 100%;
     line-height: 35px;
     font-size: 20px;
 }
 
-.intro-button{
+.intro_button{
     height: 50px;
     width: 40%;
     background-color: #f16cc7;
@@ -65,7 +65,7 @@ a{
     margin-bottom: 100px;
 }
 
-.story-title{
+.story_title{
     align-items: center;
     justify-content: center;
     color: #41aaea;
@@ -73,13 +73,13 @@ a{
     gap: 100px;
 }
 
-.story-info{
+.story_info{
     display: flex;
     flex-direction: row;
     margin: 30px;
 }
 
-.story-tabs{
+.story_tabs{
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -87,7 +87,7 @@ a{
     margin-right: 0;
 }
 
-.story-active-button{
+.story_active_button{
     font-family: "Poppins", sans-serif;
     background-color: #222222;
     width: 15rem;
@@ -101,7 +101,7 @@ a{
     transition: all 0.3s;
 }
 
-.story-button{
+.story_button{
     font-family: "Poppins", sans-serif;
     width: 15rem;
     height: 3rem;
@@ -115,7 +115,7 @@ a{
     transition: all 0.3s;
 }
 
-.story-description{
+.story_description{
     display: flex;
     gap: 3rem;
     margin-left: 0;
@@ -123,7 +123,7 @@ a{
     padding: 40px 50px;
 }
 
-.story-quote{
+.story_quote{
     color: #f16cc7;
     border: none;
     border-left: 2px solid #f16cc7;
@@ -137,7 +137,7 @@ a{
     margin-bottom: 100px;
 }
 
-.actors-title{
+.actors_title{
     align-items: center;
     justify-content: center;
     color: #41aaea;
@@ -146,7 +146,7 @@ a{
     margin-bottom: 50px;
 }
 
-.actors-cards{
+.actors_cards{
     display: flex;
     gap: 20px;
     align-items: center;
@@ -159,23 +159,23 @@ a{
     margin: 30px;
 }
 
-.questions-intro{
+.questions_intro{
     color: #41aaea;
     display: flex;
     flex-direction: column;
     margin-left: 40px;
 }
 
-.questions-intro span{
+.questions_intro span{
     color: #a0d9fb;
 }
 
-.questions-intro img{
+.questions_intro img{
     margin-top: 40px;
     height: 70%;
 }
 
-.questions-answers{
+.questions_answers{
     background-color: #222222;
     padding: 40px 50px;
     display: flex;
@@ -189,7 +189,7 @@ a{
     gap: 15rem;
 }
 
-.netflix-info{
+.netflix_info{
     display: flex;
     gap: 30px;
     flex-direction: column;
@@ -197,11 +197,11 @@ a{
     height: 365px;
 }
 
-.netflix-title{
+.netflix_title{
     color: #41aaea;
 }
 
-.netflix-button{
+.netflix_button{
     height: 50px;
     width: 40%;
     background-color: #f16cc7;

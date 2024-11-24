@@ -3,15 +3,15 @@ import jayce from "../../../images/jayce.png";
 import leftImage from "../../../images/piltover-gallery-small1.png";
 import middleImage from "../../../images/piltover-gallery-large.png";
 import rightImage from "../../../images/piltover-gallery-small2.png";
-import "./PiltoverSection.css"
+import styles from "./PiltoverSection.module.css"
 
 export const PiltoverSection=()=>{
     return(
         <>
             {/*Start Piltover info section*/}
-            <section className="piltover-info">
+            <section className={`${styles.piltover_info}`}>
                 <img src={capcake} alt=""/>
-                <p><span className='piltover-info-letter'>P</span>iltover is a thriving,
+                <p><span className={`${styles.piltover_info_letter}`}>P</span>iltover is a thriving,
                     progressive city whose power and influence is on the rise. It is
                     Valoran’s cultural center, where art, craftsmanship, trade and
                     innovation walk hand in hand. Its power comes not through military
@@ -32,15 +32,15 @@ export const PiltoverSection=()=>{
             {/*End Piltover info section*/}
 
             {/*Start Piltover gallery section*/}
-            <section className="piltover-gallery">
-                <img src={leftImage} alt="" className="zaun-gallery-small"/>
-                <img src={middleImage} alt="" className="zaun-gallery-large"/>
-                <img src={rightImage} alt="" className="zaun-gallery-small"/>
+            <section className={`${styles.piltover_gallery}`}>
+                <img src={leftImage} alt="" className={`${styles.piltover_gallery_small}`}/>
+                <img src={middleImage} alt="" className={`${styles.piltover_gallery_large}`}/>
+                <img src={rightImage} alt="" className={`${styles.piltover_gallery_small}`}/>
             </section>
             {/*End Piltover gallery section*/}
 
             {/*Start Piltover video section*/}
-            <section className="piltover-video">
+            <section className={`${styles.piltover_video}`}>
                 <h2>Tales of Runeterra: Piltover and Zaun</h2>
                 <p>When Heimerdinger’s latest hextech creation is stolen by Jinx, the professor sends an unfortunate apprentice on a wild goose chase through the City of Progress… and beneath it.</p>
                 <iframe

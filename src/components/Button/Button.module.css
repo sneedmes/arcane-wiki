@@ -1,4 +1,4 @@
-.button-header{
+.button_header{
     font-family: "Poppins", sans-serif;
     height: 35%;
     cursor: pointer;
@@ -15,11 +15,11 @@
     transition: all 0.3s;
 }
 
-.button-header:hover, .button.footer:hover{
+.button_header:hover, .button.footer:hover{
     color: #edddd8;
 }
 
-.button-footer{
+.button_footer{
     padding-bottom: 0;
     font-size: 16px;
     background-color: #222222;
@@ -27,7 +27,7 @@
     color: white;
 }
 
-.button-footer:hover{
+.button_footer:hover{
     cursor: pointer;
     color: #b6b6b6;
     transition: all 0.3s;

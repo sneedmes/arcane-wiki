@@ -8,29 +8,29 @@
     background-color: #222222;
 }
 
-.footer-logo a{
+.footer_logo a{
     color: white;
     font-size: 30px;
 }
 
-.footer-logo p{
+.footer_logo p{
     margin-top: -5px;
     text-align: center;
 }
 
-.footer-nav{
+.footer_nav{
     display: flex;
     gap: 50px;
 }
 
-.footer-nav-block{
+.footer_nav_block{
     display: flex;
     gap: 10px;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.footer-contact{
+.footer_contact{
     display: flex;
     gap: 10px;
 }

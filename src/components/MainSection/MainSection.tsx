@@ -1,4 +1,4 @@
-import "./MainSection.css"
+import styles from "./MainSection.module.css"
 import {useState} from "react";
 import {story, game, actors, questions} from "../../data"
 import {StorySection} from "./StorySection/StorySection";
@@ -12,17 +12,17 @@ import netflix from "../../images/netflix.png"
 export const MainSection = ()=>{
     const [about, setAbout] = useState('story')
     return(
-        <main className="main">
+        <main className={`${styles.main}`}>
 
             {/* Introdution section*/}
-            <section className="intro">
-                <div className='intro-container'>
-                    <h1 className='intro-title'>ARCANE</h1>
-                    <span className='intro-description'>
+            <section className={`${styles.intro}`}>
+                <div className={`${styles.intro_container}`}>
+                    <h1 className={`${styles.intro_title}`}>ARCANE</h1>
+                    <span className={`${styles.intro_description}`}>
                     The series has received critical acclaim for its stunning animation, deep
                     storytelling, and character development.
                     </span>
-                    <div className="intro-button">
+                    <div className={`${styles.intro_button}`}>
                         <a href='http://arcane.com' target='_blank'>Learn more</a>
                     </div>
                 </div>
@@ -30,36 +30,36 @@ export const MainSection = ()=>{
             {/* End of Introdution section*/}
 
             {/* Story section*/}
-            <section className="story">
-                <div className="story-title">
+            <section className={`${styles.story}`}>
+                <div className={`${styles.story_title}`}>
                     <h2>ANE STORY.</h2>
                     <h2>ARCANE. THE STORY.</h2>
                     <h2>ARCANE. THE STORY.</h2>
                     <h2>ARCANE. THE ST</h2>
                 </div>
-                <div className="story-info">
-                    <div className="story-tabs">
+                <div className={`${styles.story_info}`}>
+                    <div className={`${styles.story_tabs}`}>
                         <button onClick={() => setAbout('story')}
-                                className={about === 'story' ? 'story-active-button' : 'story-button'}>Story
+                                className={about === 'story' ? `${styles.story_active_button}` : `${styles.story_button}`}>Story
                         </button>
                         <button onClick={() => setAbout('game')}
-                                className={about === 'game' ? 'story-active-button' : 'story-button'}>Game
+                                className={about === 'game' ? `${styles.story_active_button}` : `${styles.story_button}`}>Game
                         </button>
                     </div>
                     {about === 'story' &&
-                        <div className='story-description'>
+                        <div className={`${styles.story_description}`}>
                             <img src={storyImage} alt=""/>
                             <div>
-                                <p className='story-quote'>"There are monsters inside all of us."</p>
+                                <p className={`${styles.story_quote}`}>"There are monsters inside all of us."</p>
                                 {story.map(story => <StorySection {...story}/>)}
                             </div>
                         </div>
                     }
                     {about === 'game' &&
-                        <div className='story-description'>
+                        <div className={`${styles.story_description}`}>
                             <img src={gameImage} alt=""/>
-                            <div className='story-text'>
-                                <p className='story-quote'>“Those who do not know their limits will never reach their potential.”</p>
+                            <div className={`${styles.story_text}`}>
+                                <p className={`${styles.story_quote}`}>“Those who do not know their limits will never reach their potential.”</p>
                                 {game.map(game => <StorySection {...game}/>)}
                             </div>
                         </div>
@@ -69,43 +69,43 @@ export const MainSection = ()=>{
             {/* End of Story section*/}
 
             {/* Start of Actors section*/}
-            <section className="actors">
-                <div className="actors-title">
+            <section className={`${styles.actors}`}>
+                <div className={`${styles.actors_title}`}>
                     <h2>ACTORS</h2>
                     <h2>VOICE ACTORS</h2>
                     <h2>VOICE ACTORS</h2>
                     <h2>VOICE ACTORS</h2>
                     <h2>VOICE AC</h2>
                 </div>
-                <div className="actors-cards">
+                <div className={`${styles.actors_cards}`}>
                     {actors.map(info=> <ActorsSection {...info}/>)}
                 </div>
             </section>
             {/* End of Actors section*/}
 
             {/* Start of Questions section*/}
-            <section className="questions">
-                <div className="questions-intro">
+            <section className={`${styles.questions}`}>
+                <div className={`${styles.questions_intro}`}>
                     <h2>FREQUENTLY</h2>
                     <h2><span>ASKED</span> QUESTIONS</h2>
                     <img src={questionsImage} alt=""/>
                 </div>
-                <div className="questions-answers">
+                <div className={`${styles.questions_answers}`}>
                     {questions.map(info=> <QuestionsSection {...info}/>)}
                 </div>
             </section>
             {/* End of Questions section*/}
 
             {/* Start of Netflix section*/}
-            <section className="netflix">
-                <div className="netflix-info">
+            <section className={`${styles.netflix}`}>
+                <div className={`${styles.netflix_info}`}>
                     <div>
                         <h2>START</h2>
-                        <h2><span className="netflix-title">THE ADVENTURE</span></h2>
+                        <h2><span className={`${styles.netflix_title}`}>THE ADVENTURE</span></h2>
                     </div>
                     <p>Let’s gather together to explore the captivating journey of Piltover and Zaun. Whether you’re a
                         long-time fan or new to the world of Arcane, this will be an amazing experience!</p>
-                    <div className="netflix-button">
+                    <div className={`${styles.netflix_button}`}>
                         <a href='https://www.netflix.com/title/81435684' target='_blank'>Watch on Netflix</a>
                     </div>
                 </div>

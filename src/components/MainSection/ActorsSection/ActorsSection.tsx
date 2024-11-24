@@ -1,4 +1,4 @@
-import "./ActorsSection.css"
+import styles from "./ActorsSection.module.css"
 import instagram from "../../../images/instagram.png";
 
 type ActorsProps = {
@@ -12,12 +12,12 @@ type ActorsProps = {
 export const ActorsSection = ({actor, name, character, quote, social}: ActorsProps)=>{
     console.log(actor)
     return (
-        <div className='cards'>
-            <img src={actor} alt="" className='actors-img'/>
-            <h4 className='actors-name'>{name}</h4>
-            <p>Character: <span className='actors-character'>{character}</span></p>
+        <div className={`${styles.cards}`}>
+            <img src={actor} alt="" className={`${styles.actors_img}`}/>
+            <h4 className={`${styles.actors_name}`}>{name}</h4>
+            <p>Character: <span className={`${styles.actors_character}`}>{character}</span></p>
             <a href={social} target='_blank'><img src={instagram} alt=""/></a>
-            <p><span className='actors-quote'>{quote}</span></p>
+            <p><span className={`${styles.actors_quote}`}>{quote}</span></p>
         </div>
     )
 }
