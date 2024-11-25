@@ -3,8 +3,8 @@
     gap: 5px;
     color: #DECEB2;
     padding: 30px;
-    justify-content: space-between;
-    margin-bottom: 100px;
+    justify-content: space-around;
+    margin: 0 0 100px 100px;
 }
 
 .piltover_info_letter{

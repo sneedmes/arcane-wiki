@@ -29,8 +29,7 @@ export default function Button({ isActive, handleClick, text, position }: Button
             {['zaun', 'piltover', 'noxus'].includes(position) &&
                 <button
                     onClick={handleClick}
-                    className={isActive ? `${styles.button_city} ${styles.city_active}` : styles.button_city}
-                >
+                    className={isActive ? `${styles.button_city} ${styles.button_city_active}` : styles.button_city}>
                     {text}
                 </button>
             }

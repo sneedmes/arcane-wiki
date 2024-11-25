@@ -33,4 +33,17 @@
     transition: all 0.3s;
 }
 
+.button_city{
+    font-size: 44px;
+    background: none;
+    border: none;
+    color: #cfbb8f;
+    cursor: pointer;
+}
 
+.button_city_active{
+    font-size: 54px;
+    cursor: pointer;
+    color: #B99759;
+    transition: all 0.3s;
+}
