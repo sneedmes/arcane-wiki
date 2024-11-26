@@ -1,15 +1,20 @@
 .zaun_info{
     display: flex;
     gap: 5px;
-    color: #DECEB2;
+    color: white;
     padding: 30px;
     justify-content: space-between;
     margin-bottom: 100px;
 }
 
+.zaun_info p{
+    background-color: #222222;
+    padding: 30px;
+}
+
 .zaun_info_letter{
     font-size: 36px;
-    color: #cfbb8f;
+    color: #f16cc7;
 }
 
 .zaun_info p, .zaun_video  p{
@@ -30,13 +35,22 @@
 .zaun_video{
     padding: 30px;
     text-align: center;
-    color: #DECEB2;
+    color: white;
     display: flex;
     flex-direction: column;
     gap: 30px;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+}
+
+.zaun_video p{
+    background-color: #222222;
+    padding: 30px;
+}
+
+.zaun_video h2{
+    color: #41aaea;
 }
 
 .zaun_video iframe{

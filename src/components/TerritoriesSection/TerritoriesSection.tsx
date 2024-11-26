@@ -6,7 +6,6 @@ import {PiltoverSection} from "./PiltoverSection/PiltoverSection";
 import zaun_logo from "../../images/zaun-logo.png";
 import piltover_logo from "../../images/piltover-logo.png";
 import noxus_logo from "../../images/noxus-logo.png";
-import background from "../../images/territories-background.png";
 import styles from "./TerritoriesSection.module.css"
 
 export const TerritoriesSection = ()=>{

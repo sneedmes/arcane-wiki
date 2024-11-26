@@ -37,13 +37,18 @@
     font-size: 44px;
     background: none;
     border: none;
-    color: #cfbb8f;
+    color: #8cbcdd;
     cursor: pointer;
 }
 
 .button_city_active{
     font-size: 54px;
     cursor: pointer;
-    color: #B99759;
+    color: #41aaea;
     transition: all 0.3s;
+}
+
+.button_card{
+    background: none;
+    border: none;
 }

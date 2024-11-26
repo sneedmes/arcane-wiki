@@ -1,0 +1,29 @@
+*{
+    color: white;
+}
+
+.main{
+    display: flex;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.info{
+    width: 30%;
+    margin-right: 150px;
+}
+
+.info h2{
+    color: #41aaea;
+    font-size: 90px;
+}
+
+.img{
+    text-align: center;
+    margin-right:0px;
+    width: 25%;
+}

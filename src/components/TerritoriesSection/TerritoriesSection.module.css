@@ -4,10 +4,10 @@
     justify-content: center;
     align-items: center;
     position: static;
-    background-image: url("../../images/territories-background.png");
-    background-repeat: no-repeat;
+    background-color: #191919;
     background-size: cover;
     padding: 60px;
+    margin: 0 100px;
 }
 
 .city_active{

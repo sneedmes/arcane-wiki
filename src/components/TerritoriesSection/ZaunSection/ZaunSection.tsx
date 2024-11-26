@@ -28,9 +28,9 @@ export const ZaunSection = ()=>{
 
             {/*Start Zaun gallery section*/}
             <section className={`${styles.zaun_gallery}`}>
-                <img src={leftImage} alt="" className={`${styles.zaun_gallery_small}`}/>
-                <img src={middleImage} alt="" className={`${styles.zaun_gallery_large}`}/>
-                <img src={rightImage} alt="" className={`${styles.zaun_gallery_small}`}/>
+                <img src={leftImage} alt=""/>
+                <img src={middleImage} alt=""/>
+                <img src={rightImage} alt=""/>
             </section>
             {/*End Zaun gallery section*/}
 
