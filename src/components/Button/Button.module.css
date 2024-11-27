@@ -50,5 +50,8 @@
 
 .button_card{
     background: none;
-    border: none;
+    border: 1px blue solid;
+    padding: 30px;
+    height: 100px;
+    cursor: pointer;
 }

@@ -59,3 +59,32 @@ export const questions = [
         answer: 'Arcane is Riot Games’ first foray into the movie and TV space, with the animated series bringing to life the stories of some of League of Legends\' most iconic champions in a stunning visual style from animation studio Fortiche. The series is densely packed with world-building, origin stories, and lore that has drawn in fans worldwide, some who are familiar with Riot’s games and many who are not. Co-creator Christian Linke confirmed earlier in 2024 that Arcane Season 2 would be the last for the series but that the team had many more ideas in development set in the League of Legends world.'
     }
 ]
+
+export const characters = [
+    {
+        name: "JINX",
+        descriptionFirst: "As a child, Powder was kind but curious, clumsy, impulsive, and reckless, often making\n" +
+            "                            decisions\n" +
+            "                            that would badly affect the people around her. She was constantly criticized by Mylo for\n" +
+            "                            this,\n" +
+            "                            and it made her hate herself when she made these decisions. Deeply traumatized by the death\n" +
+            "                            of\n" +
+            "                            her parents, she would have attachment issues, specifically towards her sister Vi. After she\n" +
+            "                            caused the deaths of Mylo, Claggor, and Vander and Vi seemingly abandoning her during her\n" +
+            "                            most\n" +
+            "                            weakest moment, her trauma would become more pronounced, experiencing both auditory and\n" +
+            "                            visual\n" +
+            "                            hallucinations of Mylo and Claggor's dead voices and bodies. She's also very sarcastic,\n" +
+            "                            extroverted with a twisted sense of humor.",
+        descriptionSecond: "Jinx (born as Powder) is a notorious Zaun criminal and one of the two lead characters of the\n" +
+            "                            animated series Arcane, alongside her older sister Vi. When she was a little girl, her\n" +
+            "                            parents\n" +
+            "                            were murdered in a failed uprising against Piltover Crest icon Piltover, leading Vander\n" +
+            "                            Vander,\n" +
+            "                            the leader of the rebellion, to adopt her and her sister as his daughters. After a series of\n" +
+            "                            tragic events forced Jinx and Vi apart, she was fundamentally and irrevocably changed,\n" +
+            "                            leading\n" +
+            "                            her to reject her old identity as Powder and become the nihilistic anarchist she is today.",
+        img: "jinx.png"
+    }
+]

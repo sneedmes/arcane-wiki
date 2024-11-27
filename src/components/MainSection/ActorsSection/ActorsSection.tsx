@@ -10,7 +10,6 @@ type ActorsProps = {
 }
 
 export const ActorsSection = ({actor, name, character, quote, social}: ActorsProps)=>{
-    console.log(actor)
     return (
         <div className={`${styles.cards}`}>
             <img src={actor} alt="" className={`${styles.actors_img}`}/>
