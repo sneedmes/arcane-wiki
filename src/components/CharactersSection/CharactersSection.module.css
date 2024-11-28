@@ -14,8 +14,11 @@
 }
 
 .info{
-    width: 30%;
-    margin-right: 100px;
+    display: flex;
+    width: 70%;
+    margin-right: 5%;
+    justify-content: space-between;
+    gap: 50px;
 }
 
 .info h2{
@@ -23,7 +26,12 @@
     font-size: 90px;
 }
 
-.img{
+.info_img{
+    object-fit: cover;
     text-align: center;
-    width: 25%;
+}
+
+.info_description{
+    background-color: #222222;
+    padding: 30px;
 }

@@ -49,9 +49,20 @@
 }
 
 .button_card{
-    background: none;
-    border: 1px blue solid;
+    background: #222222;
+    border: none;
     padding: 30px;
     height: 100px;
     cursor: pointer;
+    opacity: 0.5;
+}
+
+.button_card_active{
+    background: #222222;
+    border: none;
+    padding: 30px;
+    height: 100px;
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.5s;
 }
