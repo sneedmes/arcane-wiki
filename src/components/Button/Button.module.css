@@ -58,7 +58,8 @@
 }
 
 .button_card_active{
-    background: #222222;
+    /*background: #222222;*/
+    background-image: url("../../images/backJinx.jpg");
     border: none;
     padding: 30px;
     height: 100px;

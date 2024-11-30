@@ -11,6 +11,9 @@
     display: flex;
     flex-direction: column;
     width: 25%;
+    overflow: auto;
+    max-height: 650px;
+    scrollbar-color: #222222 #555454;
 }
 
 .info{

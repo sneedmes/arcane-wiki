@@ -30,12 +30,15 @@ export const CharactersSection = ()=>{
             {/* Start of Info section*/}
             <section className={styles.info}>
                 <div>
-                    <h2>{card.toUpperCase()}</h2>
-                    <p className={`${styles.info_description}`}>{characters[card].description}</p>
+                    <h2 style={{color: `${characters[card].color}`}}>{card.toUpperCase()}</h2>
+                    <hr/>
+                    <p className={`${styles.info_description}`}>{characters[card].description1}</p>
+                    <p className={`${styles.info_description}`}>{characters[card].description2}</p>
                 </div>
                 <div>
                     <img src={characters[card].image} alt='' className={styles.info_img}/>
                 </div>
+
             </section>
             {/* End of Info section*/}
         </main>
