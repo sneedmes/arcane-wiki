@@ -18,10 +18,12 @@ export const CharactersSection = ()=>{
                 <Button text='CAITLYN' isActive={card === 'cait'} position='card' handleClick={()=>handleClick('cait')}/>
                 <Button text='EKKO' isActive={card === 'ekko'} position='card' handleClick={()=>handleClick('ekko')}/>
                 <Button text='SILCO' isActive={card === 'silco'} position='card' handleClick={()=>handleClick('silco')}/>
-                <Button text='VANDER' isActive={card === 'vander'} position='card' handleClick={()=>handleClick('vander')}/>
+                <Button text='ISHA' isActive={card === 'isha'} position='card' handleClick={()=>handleClick('isha')}/>
                 <Button text='JAYCE' isActive={card === 'jayce'} position='card' handleClick={()=>handleClick('jayce')}/>
                 <Button text='VIKTOR' isActive={card === 'viktor'} position='card' handleClick={()=>handleClick('viktor')}/>
                 <Button text='MEL' isActive={card === 'mel'} position='card' handleClick={()=>handleClick('mel')}/>
+                <Button text='HEIMER' isActive={card === 'heimer'} position='card' handleClick={()=>handleClick('heimer')}/>
+                <Button text='VANDER' isActive={card === 'vander'} position='card' handleClick={()=>handleClick('vander')}/>
                 <Button text='SEYVIKA' isActive={card === 'sevika'} position='card' handleClick={()=>handleClick('sevika')}/>
                 <Button text='AMBESSA' isActive={card === 'ambessa'} position='card' handleClick={()=>handleClick('ambessa')}/>
             </section>
@@ -38,7 +40,6 @@ export const CharactersSection = ()=>{
                 <div>
                     <img src={characters[card].image} alt='' className={styles.info_img}/>
                 </div>
-
             </section>
             {/* End of Info section*/}
         </main>

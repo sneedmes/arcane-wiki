@@ -15,6 +15,7 @@ export const TerritoriesSection = ()=>{
     }
     return(
         <>
+            {/* Start of City Section */}
             <section className={`${styles.city}`}>
                 <Button text='PILTOVER' isActive={city === 'piltover'} handleClick={()=>handleClick('piltover')} position='piltover'/>
                 <div className={`${styles.city_active}`}>
@@ -23,11 +24,15 @@ export const TerritoriesSection = ()=>{
                 </div>
                 <Button text='NOXUS' isActive={city === 'noxus'} handleClick={()=>handleClick('noxus')} position='noxus'/>
             </section>
+            {/* End of City Section */}
+
+            {/* Start of About Section */}
             <section className={`${styles.about}`}>
                 {city === 'zaun' && <ZaunSection/>}
                 {city === 'piltover' && <PiltoverSection/>}
                 {city === 'noxus' && <NoxusSection/>}
             </section>
+            {/* End of About Section */}
         </>
     )
 }

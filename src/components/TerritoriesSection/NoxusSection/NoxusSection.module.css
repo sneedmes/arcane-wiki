@@ -8,6 +8,10 @@
     margin-bottom: 100px;
 }
 
+.noxus_info img{
+    object-fit: contain;
+}
+
 .noxus_info p{
     background-color: #222222;
     padding: 30px;

@@ -7,6 +7,10 @@
     margin: 0 0 100px 100px;
 }
 
+.piltover_info img{
+    object-fit: contain;
+}
+
 .piltover_info p{
     background-color: #222222;
     padding: 30px;

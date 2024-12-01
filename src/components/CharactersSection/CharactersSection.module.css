@@ -1,5 +1,6 @@
 *{
     color: white;
+    font-family: "Poppins", sans-serif;
 }
 
 .main{
@@ -12,7 +13,7 @@
     flex-direction: column;
     width: 25%;
     overflow: auto;
-    max-height: 650px;
+    max-height: 750px;
     scrollbar-color: #222222 #555454;
 }
 
