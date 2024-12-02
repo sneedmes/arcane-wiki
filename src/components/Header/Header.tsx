@@ -19,19 +19,19 @@ export const Header = ({active, onClick}: HeaderProps) => {
                 <div className={`${styles.header_nav}`}>
                     <Button isActive={active === 'characters'}
                             handleClick={() => onClick('characters')}
-                            text='Characters'
+                            text='CHARACTERS'
                             position='header'/>
                     <Button isActive={active === 'media'}
                             handleClick={() => onClick('media')}
-                            text='Media'
+                            text='MEDIA'
                             position='header'/>
                     <Button isActive={active === 'main'}
                             handleClick={() => onClick('main')}
-                            text='Main'
+                            text='MAIN'
                             position='header'/>
                     <Button isActive={active === 'territories'}
                             handleClick={() => onClick('territories')}
-                            text='Territories'
+                            text='TERRITORIES'
                             position='header'/>
                 </div>
                 <div className={`${styles.header_contact}`}>

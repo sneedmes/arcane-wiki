@@ -1,11 +1,8 @@
-*{
-    color: white;
-    font-family: "Poppins", sans-serif;
-}
-
 .main{
     display: flex;
     gap: 50px;
+    color: white;
+    font-family: "Poppins", sans-serif;
 }
 
 .card{
