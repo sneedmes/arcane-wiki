@@ -13,17 +13,25 @@ main{
 
 .intro{
     margin: 30px;
-    padding: 30px;
-    background-color: #222222;
+    padding: 50px;
+    background-image: url("../../images/mediaIntroBack.png");
+    background-repeat: no-repeat;
     border-radius: 10px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
 }
 
 .intro_main{
-    width: 45%;
+    width: 50%;
 }
 
 .intro h2{
     color: #41aaea;
+    font-size: 60px;
+    line-height: 4rem;
 }
 
 .intro_button{
@@ -35,4 +43,21 @@ main{
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+}
+
+.img_card{
+    display: flex;
+    gap: 70px;
+
+}
+
+.card{
+    border-radius: 20px;
+    background-color: #222222;
+    text-align: center;
+    padding: 30px;
+}
+
+.card img{
+    margin-bottom: 30px;
 }
