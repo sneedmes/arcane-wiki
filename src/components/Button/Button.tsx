@@ -41,7 +41,7 @@ export default function Button({ isActive, handleClick, text, position }: Button
             {position === 'img-card' &&
                 <button
                     onClick={handleClick}
-                    className={isActive ? `${styles.img_card} ${styles.img_card_active}` : styles.img_card}>
+                    className={isActive ? `${styles.button_img_card} ${styles.button_img_card_active}` : styles.button_img_card}>
                     {text}
                 </button>
             }

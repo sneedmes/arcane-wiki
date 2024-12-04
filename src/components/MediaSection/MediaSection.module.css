@@ -62,8 +62,16 @@ main{
     background-color: #222222;
     text-align: center;
     padding: 30px;
+    transition: all 0.3s;
 }
 
 .card img{
     margin-bottom: 30px;
+}
+
+.pagination{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 50px;
 }

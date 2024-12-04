@@ -70,3 +70,23 @@
     color: white;
     transition: all 0.5s;
 }
+
+.button_img_card{
+    padding: 10px;
+    background-color: #222222;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    width: 30px;
+    color: white;
+}
+
+.button_img_card_active{
+    padding: 10px;
+    background-color: #41aaea;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    width: 40px;
+    transition: all 0.3s;
+}
