@@ -23,21 +23,21 @@ export const game = [
 
 export const actors = [
     {
-        actor: 'actor-1.png',
+        actor: 'actors/actor-1.png',
         name: 'Ella Purnell',
         character: 'Jinx',
         quote: '"“I thought maybe you could love me like you used to."',
         social: 'https://www.instagram.com/ella_purnell/?hl=ru'
     },
     {
-        actor: 'actor-2.png',
+        actor: 'actors/actor-2.png',
         name: 'Hailee Steinfeld',
         character: 'Vi',
         quote: '"We’ve all had bad days. But we learn. And we stick together."',
         social: 'https://www.instagram.com/haileesteinfeld/'
     },
     {
-        actor: 'actor-3.png',
+        actor: 'actors/actor-3.png',
         name: 'Katie Leung',
         character: 'Caitlyn Kiramman',
         quote: '"Every case, every investigation brings me one step closer to justice."',
@@ -64,7 +64,7 @@ export const characters = {
     jinx: {
         color: "#30588C",
         description1: 'Jinx is a manic and impulsive criminal from Zaun, known for her chaotic behavior and love for mayhem. She thrives on destruction and revels in chaos, whether it\'s robbing banks or causing explosions. With her signature blue hair and a wild assortment of weaponry, including her trusty rocket launcher, she embodies the archetype of a chaotic anarchist. Jinx seeks to prove her superiority over her sister, Vi, often setting traps and orchestrating elaborate schemes to get her attention. Her fun-loving yet unpredictable personality makes her a feared yet oddly charming figure in the underbelly of Piltover and Zaun.',
-        image: 'jinx.png',
+        image: 'characters/jinx.png',
         description2: 'Everything Jinx does is with child-like glee and energy, hence why she is the only LoL champion who has an exclamation mark after every ability name.'
     },
     vi: {
@@ -75,7 +75,7 @@ export const characters = {
             ' sister, Jinx, leading to an internal conflict as she struggles to reconnect with her. Despite the trials she ' +
             'faces, Vi remains loyal to her allies and friends, embodying the spirit of a protector against the chaos that' +
             ' surrounds her.',
-        image: 'vi.png',
+        image: 'characters/vi.png',
         description2: 'Another fun fact involving Vi is when she is in prison in Arcane. She is known as inmate' +
             ' 516, who spells out her name twice. VIVI, when you write out each number in Roman numerals.'
     },
@@ -87,7 +87,7 @@ export const characters = {
             ' with the expectations placed' +
             ' upon her family while striving to make a difference in the city. Her partnership with Vi strengthens' +
             ' her resolve, as they tackle the criminal underworld together, merging their complementary skills.',
-        image: 'cait.png',
+        image: 'characters/cait.png',
         description2: 'Caitlyn has a strong sense of justice. Raised in the Kiramman Clan, one of the ruling houses' +
             ' of Piltover, she abandons the comfort of a traditional, elite lifestyle in favour of seeing the world' +
             ' for herself as an Enforcer.'
@@ -99,7 +99,7 @@ export const characters = {
             ' determination to prove himself. Viktor’s pursuit of progress is unwavering, leading him to discover ways' +
             ' to augment humanity through his inventions. As he navigates the ever-changing socio-political landscape of' +
             ' Piltover and Zaun, Viktor grapples with the consequences of his actions and the ultimate purpose of his innovations.',
-        image: 'viktor.png',
+        image: 'characters/viktor.png',
         description2: 'The ingenious inventor is devoted to improving humankind, and while in the game he focuses' +
             ' on humanity as a whole, in Arcane, a lot of his attention is spent on trying to save himself.'
     },
@@ -111,7 +111,7 @@ export const characters = {
             ' against the oppressive forces of the city, seeking to protect their home from the chaos around them. With' +
             ' his signature attitude and street-smart instincts, he often prefers to outwit his opponents rather than confront' +
             ' them directly.',
-        image: 'ekko.png',
+        image: 'characters/ekko.png',
         description2: 'He believes that Zaun has untapped potential, championing their ingenuity and resourcefulness.' +
             ' That’s represented by the Firelight base being located around one of the few trees in Zaun, which proves that' +
             ' life can grow and even blossom in the undercity.'
@@ -123,7 +123,7 @@ export const characters = {
             ' he often finds himself torn between friendship and ambition. Jayce remains steadfast, combining intellect ' +
             'and courage in his quest for a better future. These character descriptions encapsulate their motivations,' +
             ' personalities, and relationships within the richly crafted world of "Arcane".',
-        image: 'jayce.png',
+        image: 'characters/jayce.png',
         description2: 'The starry-eyed scientist only sees potential and all the good that could be done if he could ' +
             'harness the power of magic through science. Unfortunately for him, politics, greed, and bad-faith actors all ' +
             'get in the way of his intention to improve lives.'
@@ -136,7 +136,7 @@ export const characters = {
             ' protector to those in his community. Vander is a former fighter with a troubled past.' +
             ' Despite his imposing presence and strength, he advocates for non-violence, believing in the' +
             ' potential for reconciliation instead of conflict.',
-        image: 'vander.png',
+        image: 'characters/vander.png',
         description2: 'Vander is implied to have been a brutal and violent man in his younger years, with' +
             ' Silco openly describing him as a "beast". This was' +
             ' also demonstrated during a flashback that Silco had, in which Vander tried to viciously drown him ' +
@@ -149,7 +149,7 @@ export const characters = {
             ' more self-serving agenda. As a master of manipulation, she seeks to position herself as a key player in' +
             ' the ongoing struggles between Piltover and Zaun. Her connection with Jayce adds another layer to her character' +
             ', as they both pursue their visions for the future, often leading to moral dilemmas.',
-        image: 'mel.png',
+        image: 'characters/mel.png',
         description2: 'Mel is a clever and cunning person, able to influence and manipulate people to her advantage.' +
             ' She cares for Piltover and wants to see it prosper, yet she is very calculated and analytical. She clashes' +
             ' with her mother and ultimately decides to vote for peace with Zaun' +
@@ -162,7 +162,7 @@ export const characters = {
             ' a sense of hope and resilience among them. Isha embodies the spirit of Zaun, focusing on community support' +
             ' and love in the midst of struggle. Her presence highlights the human cost of the ongoing conflict between the' +
             ' upper city and the undercity.',
-        image: 'isha.png',
+        image: 'characters/isha.png',
         description2: 'Due to her young age and her implied mutism, Isha was a quiet and pure-hearted girl who was' +
             ' always willing to help out the people she cared about, namely Jinx. She also had a great sense of loyalty' +
             ' towards her loved ones and was brave to the point of recklessness.'
@@ -173,7 +173,7 @@ export const characters = {
             ' with the politics of power and control. She is a key player in the rising tensions between Zaun and Piltover,' +
             ' representing a more ruthless side of leadership and ambition. Ambessa\'s motivations are often driven by the' +
             ' pursuit of power and her desire to maintain her legacy.',
-        image: 'ambessa.png',
+        image: 'characters/ambessa.png',
         description2: 'Ambessa is a confident person, showing no shame or emotional weaknesses.' +
             ' Merciless to her enemies, she prefers aggression over passivity due to the way her' +
             ' father brought her up and the Noxian culture she was raised in. Accompanying her ruthlessness is brazen' +
@@ -186,7 +186,7 @@ export const characters = {
             ' her goals. She respects Silco as a leader but is also determined' +
             ' to assert her own strength. This constant push and pull between loyalty and ambition defines her character as she' +
             ' navigates the dark world of Zaun\'s underbelly.',
-        image: 'sevika.png',
+        image: 'characters/sevika.png',
         description2: 'Running a tight ship, Sevika doesn\'t tolerate weakness or failure, which leads her to see Jinx' +
             ' as a liability to Silco\'s criminal empire, leading to a strong mutual dislike between the two. Despite this,' +
             ' Sevika is not wholly unsympathetic to Jinx, and offers words of encouragement to Silco upon her disappearance.'
@@ -200,7 +200,7 @@ export const characters = {
             ' to communicate the urgency of his concerns to his peers, often finding himself at odds with the more ambitious' +
             ' members of the council. His character serves as a reminder of the ethical responsibilities that come with' +
             ' innovation and progress.',
-        image: 'heimerdinger.png',
+        image: 'characters/heimerdinger.png',
         description2: 'The short and adorable Yordle scientist is an absolute genius. Heimerdinger is' +
             ' a well-respected figure in Piltover after three centuries of helping the region’s bright minds' +
             ' realise their potential, leading to him becoming the dean of the academy and the head of the Piltover Council.'
@@ -212,7 +212,7 @@ export const characters = {
             ' and enemies alike. Silco\'s vision for Zaun is one of independence and power. His relationship with' +
             ' Jinx is particularly complex, as he views her not just as an ally but as a daughter figure, fostering' +
             ' a deep emotional bond despite their dark dealings.',
-        image: 'silko.png',
+        image: 'characters/silko.png',
         description2: 'Silco was a ruthless and brutal, yet highly intelligent and cautious man who was willing' +
             ' to do anything to carry out his ambitions. He believed that violence was the only way to stand against' +
             ' Piltover and unite the underground against the Topsiders, and that power only came to those who were willing' +

@@ -1,5 +1,4 @@
 import styles from "../MediaSection.module.css";
-import jinx from "../../../images/jinx-card.png";
 import {CardType} from "../MediaSection";
 
 type CardProps={
@@ -9,11 +8,17 @@ type CardProps={
 export const CardSection=({card}: CardProps)=>{
     return(
         <>
-            <div className={`${styles.card}`}>
-                {/*<img src={card.img} alt=""/>*/}
-                <p>Season: 2</p>
-                <p>Episode: 6</p>
-            </div>
+            {
+                card.map((info)=> {
+                    return(
+                        <div className={`${styles.card}`}>
+                            <img src={info.img} alt=""/>
+                            <p>Season: {info.season}</p>
+                            <p>Episode: {info.episode}</p>
+                        </div>
+                    )
+                })
+            }
         </>
     )
 }

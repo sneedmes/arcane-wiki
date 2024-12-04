@@ -38,6 +38,13 @@ export default function Button({ isActive, handleClick, text, position }: Button
                     {text}
                 </button>
             }
+            {position === 'img-card' &&
+                <button
+                    onClick={handleClick}
+                    className={isActive ? `${styles.img_card} ${styles.img_card_active}` : styles.img_card}>
+                    {text}
+                </button>
+            }
         </>
     );
 }

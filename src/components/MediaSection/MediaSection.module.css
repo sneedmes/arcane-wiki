@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 a{
     text-decoration: none;
     font-weight: bold;
@@ -48,7 +52,9 @@ main{
 .img_card{
     display: flex;
     gap: 70px;
-
+    flex-wrap: wrap;
+    margin: 30px;
+    justify-content: center;
 }
 
 .card{
