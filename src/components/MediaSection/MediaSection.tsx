@@ -62,95 +62,95 @@ export const MediaSection=()=>{
         },
 
         {
-            img: "img-card/jinx-card.png",
-            season: "2",
-            episode: "1"
+            img: "img-card/viktor-card-13.png",
+            season: "1",
+            episode: "3"
         },
         {
-            img: "img-card/jinx-card-22.png",
+            img: "img-card/viktor-card-26.png",
             season: "2",
-            episode: "2"
+            episode: "6"
         },
         {
-            img: "img-card/jinx-card-27.png",
-            season: "2",
-            episode: "7"
-        },
-        {
-            img: "img-card/cait-card-21.png",
-            season: "2",
-            episode: "1"
-        },
-        {
-            img: "img-card/cait-card-28.png",
-            season: "2",
-            episode: "8"
-        },
-        {
-            img: "img-card/cait-card-29.png",
+            img: "img-card/viktor-card-29.png",
             season: "2",
             episode: "9"
         },
         {
-            img: "img-card/vi-card-15.png",
+            img: "img-card/jayce-card-12.png",
             season: "1",
-            episode: "5"
+            episode: "2"
         },
         {
-            img: "img-card/vi-card-21.png",
-            season: "2",
-            episode: "1"
-        },
-        {
-            img: "img-card/vi-card-26.png",
+            img: "img-card/jayce-card-26.png",
             season: "2",
             episode: "6"
+        },
+        {
+            img: "img-card/jayce-card-29.png",
+            season: "2",
+            episode: "9"
+        },
+        {
+            img: "img-card/ekko-card-16.png",
+            season: "1",
+            episode: "6"
+        },
+        {
+            img: "img-card/ekko-card-23.png",
+            season: "2",
+            episode: "3"
+        },
+        {
+            img: "img-card/ekko-card-27.png",
+            season: "2",
+            episode: "7"
         },
 
         {
-            img: "img-card/jinx-card.png",
-            season: "2",
-            episode: "1"
+            img: "img-card/mel-card-14.png",
+            season: "1",
+            episode: "4"
         },
         {
-            img: "img-card/jinx-card-22.png",
-            season: "2",
-            episode: "2"
+            img: "img-card/mel-card-18.png",
+            season: "1",
+            episode: "8"
         },
         {
-            img: "img-card/jinx-card-27.png",
-            season: "2",
-            episode: "7"
-        },
-        {
-            img: "img-card/cait-card-21.png",
-            season: "2",
-            episode: "1"
-        },
-        {
-            img: "img-card/cait-card-28.png",
+            img: "img-card/mel-card-28.png",
             season: "2",
             episode: "8"
         },
         {
-            img: "img-card/cait-card-29.png",
-            season: "2",
-            episode: "9"
+            img: "img-card/heim-card-12.png",
+            season: "1",
+            episode: "2"
         },
         {
-            img: "img-card/vi-card-15.png",
+            img: "img-card/heim-card-15.png",
             season: "1",
             episode: "5"
         },
         {
-            img: "img-card/vi-card-21.png",
+            img: "img-card/heim-card-27.png",
             season: "2",
-            episode: "1"
+            episode: "7"
         },
         {
-            img: "img-card/vi-card-26.png",
+            img: "img-card/silco-card-17.png",
+            season: "1",
+            episode: "7"
+        },
+        {
+            img: "img-card/silco-card-24.png",
             season: "2",
-            episode: "6"
+            episode: "4"
+        },
+        {
+            img: "img-card/silco-card-27.png",
+            season: "2",
+            episode: "7"
         },
     ]
     return(
