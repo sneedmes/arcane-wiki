@@ -57,6 +57,15 @@ main{
     justify-content: center;
 }
 
+.video_card{
+    display: flex;
+    gap: 70px;
+    flex-wrap: wrap;
+    margin: 30px;
+    justify-content: center;
+    flex-direction: row;
+}
+
 .card{
     border-radius: 20px;
     background-color: #222222;
@@ -67,6 +76,12 @@ main{
 
 .card img{
     margin-bottom: 30px;
+}
+
+.card video{
+    height: 297px;
+    width: 343px;
+    object-fit: cover;
 }
 
 .pagination{

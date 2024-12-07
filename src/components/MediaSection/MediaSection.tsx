@@ -1,10 +1,11 @@
 import styles from "./MediaSection.module.css"
-import {CardSection} from "./CardSection/CardSection";
+import {ImageSection} from "./CardSection/ImageSection";
 import Button from "../Button/Button";
 import {useState} from "react";
+import {VideoSection} from "./CardSection/VideoSection";
 
 export type CardType = {
-    img: string,
+    link: string,
     season: string,
     episode: string
 }
@@ -16,141 +17,173 @@ export const MediaSection=()=>{
     }
     const imgCard: Array<CardType> = [
         {
-            img: "img-card/jinx-card.png",
+            link: "img-card/jinx-card.png",
             season: "2",
             episode: "1"
         },
         {
-            img: "img-card/jinx-card-22.png",
+            link: "img-card/jinx-card-22.png",
             season: "2",
             episode: "2"
         },
         {
-            img: "img-card/jinx-card-27.png",
+            link: "img-card/jinx-card-27.png",
             season: "2",
             episode: "7"
         },
         {
-            img: "img-card/cait-card-21.png",
+            link: "img-card/cait-card-21.png",
             season: "2",
             episode: "1"
         },
         {
-            img: "img-card/cait-card-28.png",
+            link: "img-card/cait-card-28.png",
             season: "2",
             episode: "8"
         },
         {
-            img: "img-card/cait-card-29.png",
+            link: "img-card/cait-card-29.png",
             season: "2",
             episode: "9"
         },
         {
-            img: "img-card/vi-card-15.png",
+            link: "img-card/vi-card-15.png",
             season: "1",
             episode: "5"
         },
         {
-            img: "img-card/vi-card-21.png",
+            link: "img-card/vi-card-21.png",
             season: "2",
             episode: "1"
         },
         {
-            img: "img-card/vi-card-26.png",
+            link: "img-card/vi-card-26.png",
             season: "2",
             episode: "6"
         },
 
         {
-            img: "img-card/viktor-card-13.png",
+            link: "img-card/viktor-card-13.png",
             season: "1",
             episode: "3"
         },
         {
-            img: "img-card/viktor-card-26.png",
+            link: "img-card/viktor-card-26.png",
             season: "2",
             episode: "6"
         },
         {
-            img: "img-card/viktor-card-29.png",
+            link: "img-card/viktor-card-29.png",
             season: "2",
             episode: "9"
         },
         {
-            img: "img-card/jayce-card-12.png",
+            link: "img-card/jayce-card-12.png",
             season: "1",
             episode: "2"
         },
         {
-            img: "img-card/jayce-card-26.png",
+            link: "img-card/jayce-card-26.png",
             season: "2",
             episode: "6"
         },
         {
-            img: "img-card/jayce-card-29.png",
+            link: "img-card/jayce-card-29.png",
             season: "2",
             episode: "9"
         },
         {
-            img: "img-card/ekko-card-16.png",
+            link: "img-card/ekko-card-16.png",
             season: "1",
             episode: "6"
         },
         {
-            img: "img-card/ekko-card-23.png",
+            link: "img-card/ekko-card-23.png",
             season: "2",
             episode: "3"
         },
         {
-            img: "img-card/ekko-card-27.png",
+            link: "img-card/ekko-card-27.png",
             season: "2",
             episode: "7"
         },
 
         {
-            img: "img-card/mel-card-14.png",
+            link: "img-card/mel-card-14.png",
             season: "1",
             episode: "4"
         },
         {
-            img: "img-card/mel-card-18.png",
+            link: "img-card/mel-card-18.png",
             season: "1",
             episode: "8"
         },
         {
-            img: "img-card/mel-card-28.png",
+            link: "img-card/mel-card-28.png",
             season: "2",
             episode: "8"
         },
         {
-            img: "img-card/heim-card-12.png",
+            link: "img-card/heim-card-12.png",
             season: "1",
             episode: "2"
         },
         {
-            img: "img-card/heim-card-15.png",
+            link: "img-card/heim-card-15.png",
             season: "1",
             episode: "5"
         },
         {
-            img: "img-card/heim-card-27.png",
+            link: "img-card/heim-card-27.png",
             season: "2",
             episode: "7"
         },
         {
-            img: "img-card/silco-card-17.png",
+            link: "img-card/silco-card-17.png",
             season: "1",
             episode: "7"
         },
         {
-            img: "img-card/silco-card-24.png",
+            link: "img-card/silco-card-24.png",
             season: "2",
             episode: "4"
         },
         {
-            img: "img-card/silco-card-27.png",
+            link: "img-card/silco-card-27.png",
             season: "2",
             episode: "7"
+        },
+    ]
+    const videoCard: Array<CardType> = [
+        {
+            link: "video-card/jinx-edit.mp4",
+            season: "2",
+            episode: "2"
+        },
+        {
+            link: "video-card/vi-edit.mp4",
+            season: "1, 2",
+            episode: "all"
+        },
+        {
+            link: "video-card/jinx-edit1.mp4",
+            season: "2",
+            episode: "4"
+        },
+        {
+            link: "video-card/jinx-edit2.mp4",
+            season: "2",
+            episode: "5"
+        },
+        {
+            link: "video-card/arcane-edit.mp4",
+            season: "1, 2",
+            episode: "all"
+        },
+        {
+            link: "video-card/cait-edit.mp4",
+            season: "1",
+            episode: "all"
         },
     ]
     return(
@@ -166,7 +199,7 @@ export const MediaSection=()=>{
 
                 {/*Start of img_card section*/}
                 <section className={`${styles.img_card}`} id='img_card'>
-                    <CardSection card={imgCard.slice(0, parseInt(pagination)*9)}/>
+                    <ImageSection card={imgCard.slice(0, parseInt(pagination)*9)}/>
                 </section>
                 {/*End of img_card section*/}
 
@@ -175,7 +208,14 @@ export const MediaSection=()=>{
                     <Button text='2' isActive={pagination === '2'} handleClick={() => changePagination('2')}
                             position={'img-card'}/>
                     <Button text='3' isActive={pagination === '3'} handleClick={() => changePagination('3')}
-                            position={'img-card'}/></section>
+                            position={'img-card'}/>
+                </section>
+
+                {/*Start of video_card section*/}
+                <section className={`${styles.video_card}`} id='video_card'>
+                    <VideoSection card={videoCard.slice(0, parseInt(pagination) * 9)}/>
+                </section>
+                {/*End of video_card section*/}
             </main>
         </>
     )
