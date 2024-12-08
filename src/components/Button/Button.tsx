@@ -45,6 +45,13 @@ export default function Button({ isActive, handleClick, text, position }: Button
                     {text}
                 </button>
             }
+            {position === 'video-card' &&
+                <button
+                    onClick={handleClick}
+                    className={isActive ? `${styles.button_video_card} ${styles.button_video_card_active}` : styles.button_video_card}>
+                    {text}
+                </button>
+            }
         </>
     );
 }

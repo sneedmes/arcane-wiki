@@ -10,10 +10,14 @@ export type CardType = {
     episode: string
 }
 
-export const MediaSection=()=>{
-    const [pagination, setPagination]=useState('1')
-    const changePagination=(info: string)=>{
-        setPagination(info)
+export const MediaSection = () => {
+    const [imgages, setImages] = useState('1')
+    const [videos, setVideos] = useState('1')
+    const changeImage = (info: string) => {
+        setImages(info)
+    }
+    const changeVideo = (info: string) => {
+        setVideos(info)
     }
     const imgCard: Array<CardType> = [
         {
@@ -185,37 +189,108 @@ export const MediaSection=()=>{
             season: "1",
             episode: "all"
         },
+
+        {
+            link: "video-card/vi-edit1.mp4",
+            season: "1",
+            episode: "all"
+        },
+        {
+            link: "video-card/ekko-edit.mp4",
+            season: "2",
+            episode: "7"
+        },
+        {
+            link: "video-card/ekko-edit1.mp4",
+            season: "1",
+            episode: "all"
+        },
+
+        {
+            link: "video-card/jinx-edit.mp4",
+            season: "2",
+            episode: "2"
+        },
+        {
+            link: "video-card/vi-edit.mp4",
+            season: "1, 2",
+            episode: "all"
+        },
+        {
+            link: "video-card/jinx-edit1.mp4",
+            season: "2",
+            episode: "4"
+        },
+        {
+            link: "video-card/jinx-edit2.mp4",
+            season: "2",
+            episode: "5"
+        },
+        {
+            link: "video-card/arcane-edit.mp4",
+            season: "1, 2",
+            episode: "all"
+        },
+        {
+            link: "video-card/cait-edit.mp4",
+            season: "1",
+            episode: "all"
+        },
+
+        {
+            link: "video-card/vi-edit1.mp4",
+            season: "1",
+            episode: "all"
+        },
+        {
+            link: "video-card/ekko-edit.mp4",
+            season: "2",
+            episode: "7"
+        },
+        {
+            link: "video-card/ekko-edit1.mp4",
+            season: "1",
+            episode: "all"
+        },
     ]
-    return(
+    return (
         <>
             <main>
                 {/*Start of Intro section*/}
                 <section className={`${styles.intro}`}>
                     <div className={`${styles.intro_main}`}><p>Welcome to Arcane gallery!</p>
-                        <h2>IMAGES FROM BOTH SEASONS  OF ARCANE</h2>
+                        <h2>IMAGES FROM BOTH SEASONS OF ARCANE</h2>
                         <a href="#img_card" className={`${styles.intro_button}`}>Go to the gallery</a></div>
                 </section>
                 {/*End of Intro section*/}
 
                 {/*Start of img_card section*/}
                 <section className={`${styles.img_card}`} id='img_card'>
-                    <ImageSection card={imgCard.slice(0, parseInt(pagination)*9)}/>
+                    <ImageSection card={imgCard.slice(0, parseInt(imgages) * 9)}/>
                 </section>
                 {/*End of img_card section*/}
 
-                <section className={`${styles.pagination}`}><Button text='1' isActive={pagination === '1'} handleClick={() => changePagination('1')}
-                           position={'img-card'}/>
-                    <Button text='2' isActive={pagination === '2'} handleClick={() => changePagination('2')}
+                <section className={`${styles.pagination}`}>
+                    <Button text='1' isActive={imgages === '1'} handleClick={() => changeImage('1')}
                             position={'img-card'}/>
-                    <Button text='3' isActive={pagination === '3'} handleClick={() => changePagination('3')}
+                    <Button text='2' isActive={imgages === '2'} handleClick={() => changeImage('2')}
+                            position={'img-card'}/>
+                    <Button text='3' isActive={imgages === '3'} handleClick={() => changeImage('3')}
                             position={'img-card'}/>
                 </section>
 
                 {/*Start of video_card section*/}
                 <section className={`${styles.video_card}`} id='video_card'>
-                    <VideoSection card={videoCard.slice(0, parseInt(pagination) * 9)}/>
+                    <VideoSection card={videoCard.slice(0, parseInt(videos) * 9)}/>
                 </section>
                 {/*End of video_card section*/}
+
+                <section className={`${styles.pagination}`}>
+                    <Button text='1' isActive={videos === '1'} handleClick={() => changeVideo('1')}
+                            position={'video-card'}/>
+                    <Button text='2' isActive={videos === '2'} handleClick={() => changeVideo('2')}
+                            position={'video-card'}/>
+                </section>
             </main>
         </>
     )
