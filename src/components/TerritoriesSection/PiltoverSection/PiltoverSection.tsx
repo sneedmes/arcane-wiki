@@ -10,23 +10,18 @@ export const PiltoverSection=()=>{
         <>
             {/*Start Piltover info section*/}
             <section className={`${styles.piltover_info}`}>
-                <img src={capcake} alt=""/>
-                <p><span className={`${styles.piltover_info_letter}`}>P</span>iltover is a thriving,
-                    progressive city whose power and influence is on the rise. It is
-                    Valoran’s cultural center, where art, craftsmanship, trade and
-                    innovation walk hand in hand. Its power comes not through military
-                    might, but the engines of commerce and forward thinking. Situated on
-                    the cliffs above the district of Zaun and overlooking the ocean,
-                    fleets of ships pass through its titanic sea-gates, bringing goods
-                    from all over the world. The wealth this generates has given rise to
-                    an unprecedented boom in the city’s growth. Piltover has - and still
-                    is - reinventing itself as a city where fortunes can be made and
-                    dreams can be lived. Burgeoning merchant clans fund development in
-                    the most incredible endeavors: grand artistic follies, esoteric
-                    hextech research, and architectural monuments to their power. With
-                    ever more inventors delving into the emergent lore of hextech,
-                    Piltover has become a lodestone for the most skilled craftsmen the world over.
-                </p>
+                <div>
+                    <p><span className={`${styles.piltover_info_letter}`}>P</span>iltover is a thriving,
+                        progressive city whose power and influence is on the rise. It is
+                        Valoran’s cultural center, where art, craftsmanship, trade and
+                        innovation walk hand in hand. Its power comes not through military
+                        might, but the engines of commerce and forward thinking. Situated on
+                        the cliffs above the district of Zaun and overlooking the ocean,
+                        fleets of ships pass through its titanic sea-gates, bringing goods
+                        from all over the world.
+                    </p>
+                </div>
+                {/*<img src={capcake} alt=""/>*/}
                 <img src={jayce} alt=""/>
             </section>
             {/*End Piltover info section*/}
@@ -39,10 +34,24 @@ export const PiltoverSection=()=>{
             </section>
             {/*End Piltover gallery section*/}
 
+            <section className={`${styles.piltover_info}`}>
+                <p>
+                    The wealth this generates has given rise to
+                    an unprecedented boom in the city’s growth. Piltover has - and still
+                    is - reinventing itself as a city where fortunes can be made and
+                    dreams can be lived. Burgeoning merchant clans fund development in
+                    the most incredible endeavors: grand artistic follies, esoteric
+                    hextech research, and architectural monuments to their power. With
+                    ever more inventors delving into the emergent lore of hextech,
+                    Piltover has become a lodestone for the most skilled craftsmen the world over.
+                </p>
+            </section>
+
             {/*Start Piltover video section*/}
             <section className={`${styles.piltover_video}`}>
                 <h2>Tales of Runeterra: Piltover and Zaun</h2>
-                <p>When Heimerdinger’s latest hextech creation is stolen by Jinx, the professor sends an unfortunate apprentice on a wild goose chase through the City of Progress… and beneath it.</p>
+                <p>When Heimerdinger’s latest hextech creation is stolen by Jinx, the professor sends an unfortunate
+                    apprentice on a wild goose chase through the City of Progress… and beneath it.</p>
                 <iframe
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerPolicy="strict-origin-when-cross-origin"

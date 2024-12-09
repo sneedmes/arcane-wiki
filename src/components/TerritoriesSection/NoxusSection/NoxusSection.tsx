@@ -10,13 +10,30 @@ export const NoxusSection=()=>{
         <>
             {/*Start Piltover info section*/}
             <section className={`${styles.noxus_info}`}>
-                <img src={varior} alt=""/>
-                <p><span className={`${styles.noxus_info_letter}`}>N</span>
-                    oxus is a powerful empire with a fearsome reputation. To those beyond its borders, it is brutal, expansionist, and threatening, yet those who look past its warlike exterior see an unusually inclusive society, where the strengths and talents of its people are respected and cultivated.
-                    The Noxii were once fierce barbarian tribes, until they stormed the ancient city that now lies at the heart of their domain. Under threat from all sides, they aggressively took the fight to their enemies, pushing their borders outward with each passing year. This struggle for survival has made modern Noxians a deeply proud people who value strength above all—though that strength can manifest in many different forms.
-                    Anyone can rise to a position of power and respect within Noxus if they display the necessary aptitude, regardless of social standing, background, homeland, or wealth. Those who are able to wield magic are held in particularly high esteem, and are actively sought out in order that their special talents may be honed and best harnessed for the benefit of the empire.
-                    But in spite of this meritocratic ideal, the old noble houses still wield considerable power… and some fear that the greatest threat to Noxus comes not from its enemies, but from within.
+                <div>
+                    <p><span className={`${styles.noxus_info_letter}`}>N</span>
+                    oxus is a powerful empire with a fearsome reputation. To those beyond its borders, it is brutal,
+                    expansionist, and threatening, yet those who look past its warlike exterior see an unusually
+                    inclusive society, where the strengths and talents of its people are respected and cultivated.
+                    The Noxii were once fierce barbarian tribes, until they stormed the ancient city that now lies at
+                    the heart of their domain. Under threat from all sides, they aggressively took the fight to their
+                    enemies, pushing their borders outward with each passing year. This struggle for survival has made
+                    modern Noxians a deeply proud people who value strength above all—though that strength can manifest
+                    in many different forms.
+
                 </p>
+                    <p>
+                        Anyone can rise to a position of power and respect within Noxus if they display the necessary
+                        aptitude, regardless of social standing, background, homeland, or wealth. Those who are able to
+                        wield magic are held in particularly high esteem, and are actively sought out in order that
+                        their
+                        special talents may be honed and best harnessed for the benefit of the empire.
+                        But in spite of this meritocratic ideal, the old noble houses still wield considerable power…
+                        and
+                        some fear that the greatest threat to Noxus comes not from its enemies, but from within.
+                    </p>
+                </div>
+                {/*<img src={varior} alt=""/>*/}
                 <img src={rictus} alt=""/>
             </section>
             {/*End Piltover info section*/}

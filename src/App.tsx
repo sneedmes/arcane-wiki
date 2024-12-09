@@ -8,7 +8,7 @@ import {CharactersSection} from "./components/CharactersSection/CharactersSectio
 import {MediaSection} from "./components/MediaSection/MediaSection";
 
 function App() {
-    const [tab, setTab] = useState('media')
+    const [tab, setTab] = useState('main')
     return (
         <>
             <Header active={tab} onClick={setTab}/>
