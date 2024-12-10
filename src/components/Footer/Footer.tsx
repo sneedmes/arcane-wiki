@@ -23,20 +23,17 @@ export const Footer = ({onClick}: FooterProps) => {
                     <Button isActive={false}
                             handleClick={() => onClick('media')}
                             text='Media'
-                            position='footer'
-                    />
+                            position='footer'/>
                 </div>
                 <div className={`${styles.footer_nav_block}`}>
                     <Button isActive={false}
                             handleClick={() => onClick('main')}
                             text='Main'
-                            position='footer'
-                    />
+                            position='footer'/>
                     <Button isActive={false}
                             handleClick={() => onClick('territories')}
                             text='Territories'
-                            position='footer'
-                    />
+                            position='footer'/>
                 </div>
             </div>
             <h3>© 2024 All rights reserved</h3>

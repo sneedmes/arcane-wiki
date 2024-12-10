@@ -20,18 +20,7 @@ export const NoxusSection=()=>{
                     enemies, pushing their borders outward with each passing year. This struggle for survival has made
                     modern Noxians a deeply proud people who value strength above all—though that strength can manifest
                     in many different forms.
-
                 </p>
-                    <p>
-                        Anyone can rise to a position of power and respect within Noxus if they display the necessary
-                        aptitude, regardless of social standing, background, homeland, or wealth. Those who are able to
-                        wield magic are held in particularly high esteem, and are actively sought out in order that
-                        their
-                        special talents may be honed and best harnessed for the benefit of the empire.
-                        But in spite of this meritocratic ideal, the old noble houses still wield considerable power…
-                        and
-                        some fear that the greatest threat to Noxus comes not from its enemies, but from within.
-                    </p>
                 </div>
                 {/*<img src={varior} alt=""/>*/}
                 <img src={rictus} alt=""/>
@@ -45,6 +34,19 @@ export const NoxusSection=()=>{
                 <img src={rightImage} alt="" className={`${styles.noxus_gallery_small}`}/>
             </section>
             {/*End Piltover gallery section*/}
+
+            <section className={`${styles.noxus_info}`}>
+                <p>
+                    Anyone can rise to a position of power and respect within Noxus if they display the necessary
+                    aptitude, regardless of social standing, background, homeland, or wealth. Those who are able to
+                    wield magic are held in particularly high esteem, and are actively sought out in order that
+                    their
+                    special talents may be honed and best harnessed for the benefit of the empire.
+                    But in spite of this meritocratic ideal, the old noble houses still wield considerable power…
+                    and
+                    some fear that the greatest threat to Noxus comes not from its enemies, but from within.
+                </p>
+            </section>
 
             {/*Start Piltover video section*/}
             <section className={`${styles.noxus_video}`}>

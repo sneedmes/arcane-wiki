@@ -1,11 +1,11 @@
 .noxus_info{
     display: flex;
-    gap: 5px;
+    gap: 30px;
     color: white;
-    padding: 15px;
+    padding: 30px;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 100px;
+    margin: 0 100px 50px 100px;
 }
 
 .noxus_info img{
@@ -36,7 +36,7 @@
     display: flex;
     gap: 30px;
     padding: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     justify-content: center;
     align-items: center;
 }

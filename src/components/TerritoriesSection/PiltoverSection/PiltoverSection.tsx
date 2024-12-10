@@ -10,17 +10,15 @@ export const PiltoverSection=()=>{
         <>
             {/*Start Piltover info section*/}
             <section className={`${styles.piltover_info}`}>
-                <div>
-                    <p><span className={`${styles.piltover_info_letter}`}>P</span>iltover is a thriving,
-                        progressive city whose power and influence is on the rise. It is
-                        Valoran’s cultural center, where art, craftsmanship, trade and
-                        innovation walk hand in hand. Its power comes not through military
-                        might, but the engines of commerce and forward thinking. Situated on
-                        the cliffs above the district of Zaun and overlooking the ocean,
-                        fleets of ships pass through its titanic sea-gates, bringing goods
-                        from all over the world.
-                    </p>
-                </div>
+                <p><span className={`${styles.piltover_info_letter}`}>P</span>iltover is a thriving,
+                    progressive city whose power and influence is on the rise. It is
+                    Valoran’s cultural center, where art, craftsmanship, trade and
+                    innovation walk hand in hand. Its power comes not through military
+                    might, but the engines of commerce and forward thinking. Situated on
+                    the cliffs above the district of Zaun and overlooking the ocean,
+                    fleets of ships pass through its titanic sea-gates, bringing goods
+                    from all over the world.
+                </p>
                 {/*<img src={capcake} alt=""/>*/}
                 <img src={jayce} alt=""/>
             </section>

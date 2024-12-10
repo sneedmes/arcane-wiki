@@ -12,7 +12,7 @@ import netflix from "../../images/netflix.png"
 export const MainSection = ()=>{
     const [about, setAbout] = useState('story')
     return(
-        <main className={`${styles.main}`}>
+        <main className={`${styles.main}`} id="main">
 
             {/* Introdution section*/}
             <section className={`${styles.intro}`}>
