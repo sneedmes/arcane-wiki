@@ -1,4 +1,3 @@
-import monster from "../../../images/zaun-monster.png"
 import ekko from "../../../images/zaun-ekko.png"
 import leftImage from "../../../images/zaun-gallery-small1.png"
 import middleImage from "../../../images/zaun-gallery-large.png"
@@ -10,7 +9,6 @@ export const ZaunSection = () => {
         <>
             {/*Start Zaun info section*/}
             <section className={`${styles.zaun_info}`}>
-
                 <div>
                     <p><span className={`${styles.zaun_info_letter}`}>Z</span>aun is a large, undercity district, lying
                         in the deep canyons and valleys threading Piltover.

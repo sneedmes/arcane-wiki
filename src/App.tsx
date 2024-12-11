@@ -6,10 +6,9 @@ import {Footer} from "./components/Footer/Footer";
 import {TerritoriesSection} from "./components/TerritoriesSection/TerritoriesSection";
 import {CharactersSection} from "./components/CharactersSection/CharactersSection";
 import {MediaSection} from "./components/MediaSection/MediaSection";
-import TestSection from "./components/TestSection/TestSection";
 
 function App() {
-    const [tab, setTab] = useState('test')
+    const [tab, setTab] = useState('media')
     return (
         <>
             <Header active={tab} onClick={setTab}/>
@@ -17,7 +16,6 @@ function App() {
             {tab === 'territories' && <TerritoriesSection/>}
             {tab === 'characters' && <CharactersSection/>}
             {tab === 'media' && <MediaSection/>}
-            {tab === 'test' && <TestSection/>}
             <Footer onClick={setTab}/>
         </>
     );

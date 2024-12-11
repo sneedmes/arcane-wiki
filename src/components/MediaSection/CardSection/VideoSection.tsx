@@ -1,4 +1,4 @@
-import styles from "../MediaSection.module.css";
+import styles from "./CardSection.module.css";
 import {CardType} from "../MediaSection";
 
 type CardProps = {

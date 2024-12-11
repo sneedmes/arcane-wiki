@@ -66,24 +66,6 @@ main{
     flex-direction: row;
 }
 
-.card{
-    border-radius: 20px;
-    background-color: #222222;
-    text-align: center;
-    padding: 30px;
-    transition: all 0.3s;
-}
-
-.card img{
-    margin-bottom: 30px;
-}
-
-.card video{
-    height: 297px;
-    width: 343px;
-    object-fit: cover;
-}
-
 .pagination{
     display: flex;
     gap: 5px;
