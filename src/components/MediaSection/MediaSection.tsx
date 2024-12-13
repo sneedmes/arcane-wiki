@@ -3,6 +3,7 @@ import {ImageSection} from "./CardSection/ImageSection";
 import Button from "../Button/Button";
 import {useState} from "react";
 import {VideoSection} from "./CardSection/VideoSection";
+import Box from "@mui/material/Box";
 
 export type CardType = {
     link: string,
@@ -257,40 +258,43 @@ export const MediaSection = () => {
         <>
             <main>
                 {/*Start of Intro section*/}
-                <section className={`${styles.intro}`}>
+                <Box component="section" className={`${styles.intro}`}>
                     <div className={`${styles.intro_main}`}><p>Welcome to Arcane gallery!</p>
                         <h2>IMAGES FROM BOTH SEASONS OF ARCANE</h2>
-                        <a href="#img_card" className={`${styles.intro_button}`}>Go to the gallery</a></div>
-                </section>
+                        <a href="#img_card" className={`${styles.intro_button}`}>Go to the gallery</a>
+                    </div>
+                </Box>
                 {/*End of Intro section*/}
 
                 {/*Start of img_card section*/}
-                <section className={`${styles.img_card}`} id='img_card'>
+                <Box component="section" className={`${styles.img_card}`} id='img_card'>
                     <ImageSection card={imgCard.slice(0, parseInt(imgages) * 9)}/>
-                </section>
+                </Box>
                 {/*End of img_card section*/}
 
-                <section className={`${styles.pagination}`}>
+                <Box component="section" className={`${styles.pagination}`}>
                     <Button text='1' isActive={imgages === '1'} handleClick={() => changeImage('1')}
                             position={'img-card'}/>
                     <Button text='2' isActive={imgages === '2'} handleClick={() => changeImage('2')}
                             position={'img-card'}/>
                     <Button text='3' isActive={imgages === '3'} handleClick={() => changeImage('3')}
                             position={'img-card'}/>
-                </section>
+                </Box>
 
                 {/*Start of video_card section*/}
-                <section className={`${styles.video_card}`} id='video_card'>
+                <Box component="section" className={`${styles.video_card}`} id='video_card'>
                     <VideoSection card={videoCard.slice(0, parseInt(videos) * 9)}/>
-                </section>
+                </Box>
                 {/*End of video_card section*/}
 
-                <section className={`${styles.pagination}`}>
+                {/*Start of pagination section*/}
+                <Box component="section" className={`${styles.pagination}`}>
                     <Button text='1' isActive={videos === '1'} handleClick={() => changeVideo('1')}
                             position={'video-card'}/>
                     <Button text='2' isActive={videos === '2'} handleClick={() => changeVideo('2')}
                             position={'video-card'}/>
-                </section>
+                </Box>
+                {/*End of pagination section*/}
             </main>
         </>
     )

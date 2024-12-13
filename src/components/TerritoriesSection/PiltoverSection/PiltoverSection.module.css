@@ -37,6 +37,11 @@
     align-items: center;
 }
 
+.modal_img{
+    width: 100%;
+    height: 100%;
+}
+
 .piltover_video p{
     background-color: #222222;
     padding: 30px;

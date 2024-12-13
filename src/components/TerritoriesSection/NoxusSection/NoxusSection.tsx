@@ -1,11 +1,37 @@
-import varior from "../../../images/varior.png";
 import rictus from "../../../images/rictus.png";
 import leftImage from "../../../images/noxus-gallery-small1.png";
 import middleImage from "../../../images/noxus-gallery-large.png";
 import rightImage from "../../../images/noxus-gallery-small2.png";
 import styles from "./NoxusSection.module.css"
+import {useState} from "react";
+import Button from "@mui/material/Button";
+import Modal from "@mui/material/Modal";
+import Box from "@mui/material/Box";
+
+const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 563,
+    height: 700,
+    textAlign: "center",
+    bgcolor: 'background.paper',
+    boxShadow: 24,
+    borderRadius: '30px',
+};
 
 export const NoxusSection=()=>{
+    const [open, setOpen] = useState(false);
+    const [image, setImage] = useState('')
+
+    const handleOpen=(link: string)=>{
+        setOpen(true)
+        setImage(link)
+    }
+    const handleClose=()=>{
+        setOpen(false)
+    }
     return(
         <>
             {/*Start Piltover info section*/}
@@ -28,11 +54,22 @@ export const NoxusSection=()=>{
             {/*End Piltover info section*/}
 
             {/*Start Piltover gallery section*/}
-            <section className={`${styles.noxus_gallery}`}>
-                <img src={leftImage} alt="" className={`${styles.noxus_gallery_small}`}/>
-                <img src={middleImage} alt="" className={`${styles.noxus_gallery_large}`}/>
-                <img src={rightImage} alt="" className={`${styles.noxus_gallery_small}`}/>
-            </section>
+            <Box component="section" className={`${styles.noxus_gallery}`}>
+                <Button className={`${styles.noxus_gallery}`} onClick={() => handleOpen(leftImage)}>
+                    <img src={leftImage} alt=""/>
+                </Button>
+                <Button className={`${styles.noxus_gallery}`} onClick={() => handleOpen(middleImage)}>
+                    <img src={middleImage} alt=""/>
+                </Button>
+                <Button className={`${styles.noxus_gallery}`} onClick={() => handleOpen(rightImage)}>
+                    <img src={rightImage} alt=""/>
+                </Button>
+                <Modal open={open} onClose={handleClose} >
+                    <Box sx={style}>
+                        <img src={image} alt="" className={`${styles.modal_img}`}/>
+                    </Box>
+                </Modal>
+            </Box>
             {/*End Piltover gallery section*/}
 
             <section className={`${styles.noxus_info}`}>

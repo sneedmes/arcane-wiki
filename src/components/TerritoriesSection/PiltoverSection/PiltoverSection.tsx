@@ -1,11 +1,37 @@
-import capcake from "../../../images/capcake.png";
 import jayce from "../../../images/jayce.png";
 import leftImage from "../../../images/piltover-gallery-small1.png";
 import middleImage from "../../../images/piltover-gallery-large.png";
 import rightImage from "../../../images/piltover-gallery-small2.png";
 import styles from "./PiltoverSection.module.css"
+import Button from "@mui/material/Button";
+import Modal from "@mui/material/Modal";
+import Box from "@mui/material/Box";
+import {useState} from "react";
+
+const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 563,
+    height: 700,
+    textAlign: "center",
+    bgcolor: 'background.paper',
+    boxShadow: 24,
+    borderRadius: '30px',
+};
 
 export const PiltoverSection=()=>{
+    const [open, setOpen] = useState(false);
+    const [image, setImage] = useState('')
+
+    const handleOpen=(link: string)=>{
+        setOpen(true)
+        setImage(link)
+    }
+    const handleClose=()=>{
+        setOpen(false)
+    }
     return(
         <>
             {/*Start Piltover info section*/}
@@ -25,11 +51,22 @@ export const PiltoverSection=()=>{
             {/*End Piltover info section*/}
 
             {/*Start Piltover gallery section*/}
-            <section className={`${styles.piltover_gallery}`}>
-                <img src={leftImage} alt="" className={`${styles.piltover_gallery_small}`}/>
-                <img src={middleImage} alt="" className={`${styles.piltover_gallery_large}`}/>
-                <img src={rightImage} alt="" className={`${styles.piltover_gallery_small}`}/>
-            </section>
+            <Box component="section" className={`${styles.piltover_gallery}`}>
+                <Button className={`${styles.piltover_gallery}`} onClick={() => handleOpen(leftImage)}>
+                    <img src={leftImage} alt=""/>
+                </Button>
+                <Button className={`${styles.piltover_gallery}`} onClick={() => handleOpen(middleImage)}>
+                    <img src={middleImage} alt=""/>
+                </Button>
+                <Button className={`${styles.piltover_gallery}`} onClick={() => handleOpen(rightImage)}>
+                    <img src={rightImage} alt=""/>
+                </Button>
+                <Modal open={open} onClose={handleClose} >
+                    <Box sx={style}>
+                        <img src={image} alt="" className={`${styles.modal_img}`}/>
+                    </Box>
+                </Modal>
+            </Box>
             {/*End Piltover gallery section*/}
 
             <section className={`${styles.piltover_info}`}>
