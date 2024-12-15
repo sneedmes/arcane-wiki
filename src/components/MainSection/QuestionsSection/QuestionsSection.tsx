@@ -1,5 +1,6 @@
 import square from "../../../images/square.png"
 import styles from "./QuestionsSection.module.css"
+import { Box } from "@mui/material";
 
 type QuestionsProps = {
     question: string,
@@ -9,10 +10,10 @@ type QuestionsProps = {
 export const QuestionsSection = ({question, answer}:QuestionsProps)=>{
     return(
         <>
-            <div className={`${styles.question}`}>
+            <Box className={`${styles.question}`}>
                 <span className={`${styles.question_text}`}>{question}</span>
                 <img src={square} alt=""/>
-            </div>
+            </Box>
             <p>{answer}</p>
         </>
     )

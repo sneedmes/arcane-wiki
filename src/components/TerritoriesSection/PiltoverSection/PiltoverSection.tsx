@@ -35,7 +35,7 @@ export const PiltoverSection=()=>{
     return(
         <>
             {/*Start Piltover info section*/}
-            <section className={`${styles.piltover_info}`}>
+            <Box component="section" className={`${styles.piltover_info}`}>
                 <p><span className={`${styles.piltover_info_letter}`}>P</span>iltover is a thriving,
                     progressive city whose power and influence is on the rise. It is
                     Valoran’s cultural center, where art, craftsmanship, trade and
@@ -47,7 +47,7 @@ export const PiltoverSection=()=>{
                 </p>
                 {/*<img src={capcake} alt=""/>*/}
                 <img src={jayce} alt=""/>
-            </section>
+            </Box>
             {/*End Piltover info section*/}
 
             {/*Start Piltover gallery section*/}
@@ -69,7 +69,7 @@ export const PiltoverSection=()=>{
             </Box>
             {/*End Piltover gallery section*/}
 
-            <section className={`${styles.piltover_info}`}>
+            <Box component="section" className={`${styles.piltover_info}`}>
                 <p>
                     The wealth this generates has given rise to
                     an unprecedented boom in the city’s growth. Piltover has - and still
@@ -80,10 +80,10 @@ export const PiltoverSection=()=>{
                     ever more inventors delving into the emergent lore of hextech,
                     Piltover has become a lodestone for the most skilled craftsmen the world over.
                 </p>
-            </section>
+            </Box>
 
             {/*Start Piltover video section*/}
-            <section className={`${styles.piltover_video}`}>
+            <Box component="section" className={`${styles.piltover_video}`}>
                 <h2>Tales of Runeterra: Piltover and Zaun</h2>
                 <p>When Heimerdinger’s latest hextech creation is stolen by Jinx, the professor sends an unfortunate
                     apprentice on a wild goose chase through the City of Progress… and beneath it.</p>
@@ -93,7 +93,7 @@ export const PiltoverSection=()=>{
                     title="Tales of Runeterra: Piltover and Zaun | “True Genius” - League of Legends"
                     src="https://www.youtube.com/embed/qCVLRh1y96M?modestbranding=1&amp;rel=0&amp;showinfo=0&amp;color=white&amp;enablejsapi=1&amp;origin=https%3A%2F%2Funiverse.leagueoflegends.com&amp;widgetid=3">
                 </iframe>
-            </section>
+            </Box>
             {/*End Piltover video section*/}
         </>
     )

@@ -2,6 +2,7 @@ import Button from "../Button/Button";
 import {useState} from "react";
 import styles from "./CharactersSection.module.css"
 import {characters} from "../../data";
+import { Box } from "@mui/material";
 
 export const CharactersSection = ()=>{
     const [card, setCard]=useState<keyof typeof characters>('jinx')
@@ -12,7 +13,7 @@ export const CharactersSection = ()=>{
         <main className={`${styles.main}`}>
 
             {/* Start of Card section*/}
-            <section className={`${styles.card}`}>
+            <Box component="section" className={`${styles.card}`}>
                 <Button text='JINX' isActive={card === 'jinx'} position='card' handleClick={()=>handleClick('jinx')}/>
                 <Button text='VI' isActive={card === 'vi'} position='card' handleClick={()=>handleClick('vi')}/>
                 <Button text='CAITLYN' isActive={card === 'cait'} position='card' handleClick={()=>handleClick('cait')}/>
@@ -26,21 +27,21 @@ export const CharactersSection = ()=>{
                 <Button text='VANDER' isActive={card === 'vander'} position='card' handleClick={()=>handleClick('vander')}/>
                 <Button text='SEYVIKA' isActive={card === 'sevika'} position='card' handleClick={()=>handleClick('sevika')}/>
                 <Button text='AMBESSA' isActive={card === 'ambessa'} position='card' handleClick={()=>handleClick('ambessa')}/>
-            </section>
+            </Box>
             {/* End of Card section*/}
 
             {/* Start of Info section*/}
-            <section className={styles.info}>
-                <div>
+            <Box component="section" className={styles.info}>
+                <Box>
                     <h2 style={{color: `${characters[card].color}`}}>{card.toUpperCase()}</h2>
                     <hr/>
                     <p className={`${styles.info_description}`}>{characters[card].description1}</p>
                     <p className={`${styles.info_description}`}>{characters[card].description2}</p>
-                </div>
-                <div>
+                </Box>
+                <Box>
                     <img src={characters[card].image} alt='' className={styles.info_img}/>
-                </div>
-            </section>
+                </Box>
+            </Box>
             {/* End of Info section*/}
         </main>
     )

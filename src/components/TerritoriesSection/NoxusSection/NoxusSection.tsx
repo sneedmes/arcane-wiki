@@ -35,7 +35,7 @@ export const NoxusSection=()=>{
     return(
         <>
             {/*Start Piltover info section*/}
-            <section className={`${styles.noxus_info}`}>
+            <Box component="section" className={`${styles.noxus_info}`}>
                 <div>
                     <p><span className={`${styles.noxus_info_letter}`}>N</span>
                     oxus is a powerful empire with a fearsome reputation. To those beyond its borders, it is brutal,
@@ -50,7 +50,7 @@ export const NoxusSection=()=>{
                 </div>
                 {/*<img src={varior} alt=""/>*/}
                 <img src={rictus} alt=""/>
-            </section>
+            </Box>
             {/*End Piltover info section*/}
 
             {/*Start Piltover gallery section*/}
@@ -72,7 +72,7 @@ export const NoxusSection=()=>{
             </Box>
             {/*End Piltover gallery section*/}
 
-            <section className={`${styles.noxus_info}`}>
+            <Box component="section" className={`${styles.noxus_info}`}>
                 <p>
                     Anyone can rise to a position of power and respect within Noxus if they display the necessary
                     aptitude, regardless of social standing, background, homeland, or wealth. Those who are able to
@@ -83,17 +83,17 @@ export const NoxusSection=()=>{
                     and
                     some fear that the greatest threat to Noxus comes not from its enemies, but from within.
                 </p>
-            </section>
+            </Box>
 
             {/*Start Piltover video section*/}
-            <section className={`${styles.noxus_video}`}>
+            <Box component="section" className={`${styles.noxus_video}`}>
                 <h2>Tales of Runeterra: Noxus</h2>
                 <p>The king of the land and the Hand of Noxus. Only one will leave alive.</p>
                 <iframe width="1519" height="526" src="https://www.youtube.com/embed/FGlhWPwrkDg"
                         title="Tales of Runeterra: Noxus | “After Victory” - League of Legends"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-            </section>
+            </Box>
             {/*End Piltover video section*/}
         </>
     )

@@ -3,6 +3,7 @@ import logo from "../../images/logo.png";
 import telegram from "../../images/telegram.png";
 import gmail from "../../images/gmail.png";
 import styles from "./Header.module.css"
+import { Box } from "@mui/material";
 
 type HeaderProps = {
     active: string,
@@ -13,10 +14,10 @@ export const Header = ({active, onClick}: HeaderProps) => {
     return (
         <>
             <header className={`${styles.header}`}>
-                <div className={`${styles.header_logo}`}>
+                <Box className={`${styles.header_logo}`}>
                     <img src={logo} alt=""/>
-                </div>
-                <div className={`${styles.header_nav}`}>
+                </Box>
+                <Box className={`${styles.header_nav}`}>
                     <Button isActive={active === 'characters'}
                             handleClick={() => onClick('characters')}
                             text='CHARACTERS'
@@ -33,11 +34,11 @@ export const Header = ({active, onClick}: HeaderProps) => {
                             handleClick={() => onClick('territories')}
                             text='TERRITORIES'
                             position='header'/>
-                </div>
-                <div className={`${styles.header_contact}`}>
+                </Box>
+                <Box className={`${styles.header_contact}`}>
                     <a href="https://web.telegram.org/k/#@sneedme"><img src={telegram} alt=""/></a>
                     <a href="mailto:dallaqyan0610@gmail.com"><img src={gmail} alt=""/></a>
-                </div>
+                </Box>
             </header>
         </>
     )

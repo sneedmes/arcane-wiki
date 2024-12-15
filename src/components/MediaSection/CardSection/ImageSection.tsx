@@ -37,7 +37,7 @@ export const ImageSection=({card}: CardProps)=>{
                 card.map((info) => {
                     return (
                         <>
-                            <div className={`${styles.card}`}>
+                            <Box className={`${styles.card}`}>
                                 <Button onClick={() => handleOpen(info.link)} className={`${styles.card_button}`}>
                                     <img src={info.link} alt=""/>
                                 </Button>
@@ -53,7 +53,7 @@ export const ImageSection=({card}: CardProps)=>{
                                         <img src={currentImage} alt="" className={`${styles.card_img_active}`}/>
                                     </Box>
                                 </Modal>
-                            </div>
+                            </Box>
                         </>
                     )
                 })
